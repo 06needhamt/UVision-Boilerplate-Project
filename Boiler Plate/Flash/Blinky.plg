@@ -1,0 +1,134 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\GitHub\Boiler Plate\BoilerPlate.uvproj
+Project File Date:  12/09/2015
+
+<h2>Output:</h2>
+Clean started: Project: 'BoilerPlate'
+   deleting intermediate output files for target 'Simulator'
+   deleting intermediate output files for target 'MCBSTM32E Flash'
+   deleting intermediate output files for target 'MCBSTM32E RAM'
+   deleting intermediate output files for target 'MCBSTM32E Trace'
+Rebuild target 'MCBSTM32E Flash'
+assembling startup_stm32f10x_hd.s...
+compiling system_stm32f10x.c...
+compiling BoilerPlate.c...
+BoilerPlate.c(1): error:  #169: expected a declaration
+C:\Keil\ARM\ARMCC\bin\..\include\stdio.h(315): error:  #20: identifier "size_t" is undefined
+C:\Keil\ARM\ARMCC\bin\..\include\stdio.h(398): error:  #20: identifier "size_t" is undefined
+C:\Keil\ARM\ARMCC\bin\..\include\stdio.h(419): error:  #20: identifier "size_t" is undefined
+C:\Keil\ARM\ARMCC\bin\..\include\stdio.h(552): error:  #20: identifier "size_t" is undefined
+C:\Keil\ARM\ARMCC\bin\..\include\stdio.h(578): error:  #20: identifier "size_t" is undefined
+C:\Keil\ARM\ARMCC\bin\..\include\stdio.h(714): error:  #20: identifier "size_t" is undefined
+C:\Keil\ARM\ARMCC\bin\..\include\stdio.h(715): error:  #20: identifier "size_t" is undefined
+C:\Keil\ARM\ARMCC\bin\..\include\stdio.h(715): error:  #20: identifier "size_t" is undefined
+C:\Keil\ARM\ARMCC\bin\..\include\stdio.h(730): error:  #20: identifier "size_t" is undefined
+C:\Keil\ARM\ARMCC\bin\..\include\stdio.h(731): error:  #20: identifier "size_t" is undefined
+C:\Keil\ARM\ARMCC\bin\..\include\stdio.h(746): error:  #20: identifier "size_t" is undefined
+C:\Keil\ARM\ARMCC\bin\..\include\stdio.h(747): error:  #20: identifier "size_t" is undefined
+C:\Keil\ARM\ARMCC\bin\..\include\stdio.h(747): error:  #20: identifier "size_t" is undefined
+compiling GLCD_16bitIF_STM32.c...
+compiling IRQ.c...
+".\Flash\Blinky.axf" - 14 Errors, 0 Warning(s).
+Target not created
+Clean started: Project: 'BoilerPlate'
+   deleting intermediate output files for target 'Simulator'
+   deleting intermediate output files for target 'MCBSTM32E Flash'
+   deleting intermediate output files for target 'MCBSTM32E RAM'
+   deleting intermediate output files for target 'MCBSTM32E Trace'
+Rebuild target 'MCBSTM32E Flash'
+assembling startup_stm32f10x_hd.s...
+compiling system_stm32f10x.c...
+compiling BoilerPlate.c...
+compiling GLCD_16bitIF_STM32.c...
+compiling IRQ.c...
+linking...
+Program Size: Code=4562 RO-data=6610 RW-data=40 ZI-data=1024  
+".\Flash\Blinky.axf" - 0 Errors, 0 Warning(s).
+Load "C:\\GitHub\\Boiler Plate\\Flash\\Blinky.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'MCBSTM32E Flash'
+compiling BoilerPlate.c...
+linking...
+Program Size: Code=4558 RO-data=6610 RW-data=40 ZI-data=1024  
+".\Flash\Blinky.axf" - 0 Errors, 0 Warning(s).
+Load "C:\\GitHub\\Boiler Plate\\Flash\\Blinky.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
+Clean started: Project: 'BoilerPlate'
+   deleting intermediate output files for target 'Simulator'
+   deleting intermediate output files for target 'MCBSTM32E Flash'
+   deleting intermediate output files for target 'MCBSTM32E RAM'
+   deleting intermediate output files for target 'MCBSTM32E Trace'
+Rebuild target 'MCBSTM32E Flash'
+assembling startup_stm32f10x_hd.s...
+compiling system_stm32f10x.c...
+compiling BoilerPlate.c...
+LCD_Functions.h(3): warning:  #1-D: last line of file ends without a newline
+BoilerPlate.c(68): warning:  #223-D: function "LED_init" declared implicitly
+BoilerPlate.c(83): error:  #20: identifier "__FI" is undefined
+BoilerPlate.c(106): warning:  #223-D: function "LED_On" declared implicitly
+BoilerPlate.c(110): warning:  #223-D: function "LED_Off" declared implicitly
+BoilerPlate.c(118): warning:  #223-D: function "All_LEDs_On" declared implicitly
+BoilerPlate.c(120): warning:  #223-D: function "All_LEDs_Off" declared implicitly
+compiling GLCD_16bitIF_STM32.c...
+compiling IRQ.c...
+compiling LED_Functions.c...
+LED_Functions.c(63): warning:  #1-D: last line of file ends without a newline
+compiling LCD_Functions.c...
+LCD_Functions.c(32): warning:  #1-D: last line of file ends without a newline
+".\Flash\Blinky.axf" - 1 Errors, 8 Warning(s).
+Target not created
+Clean started: Project: 'BoilerPlate'
+   deleting intermediate output files for target 'Simulator'
+   deleting intermediate output files for target 'MCBSTM32E Flash'
+   deleting intermediate output files for target 'MCBSTM32E RAM'
+   deleting intermediate output files for target 'MCBSTM32E Trace'
+Rebuild target 'MCBSTM32E Flash'
+assembling startup_stm32f10x_hd.s...
+compiling system_stm32f10x.c...
+compiling BoilerPlate.c...
+LED_Functions.h(18): warning:  #1295-D: Deprecated declaration All_LEDs_On - give arg types
+LED_Functions.h(20): warning:  #1295-D: Deprecated declaration All_LEDs_Off - give arg types
+compiling GLCD_16bitIF_STM32.c...
+compiling IRQ.c...
+compiling LED_Functions.c...
+LED_Functions.c(63): warning:  #1-D: last line of file ends without a newline
+compiling LCD_Functions.c...
+LCD_Functions.c(34): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=4558 RO-data=6610 RW-data=40 ZI-data=1024  
+".\Flash\Blinky.axf" - 0 Errors, 4 Warning(s).
+Clean started: Project: 'BoilerPlate'
+   deleting intermediate output files for target 'Simulator'
+   deleting intermediate output files for target 'MCBSTM32E Flash'
+   deleting intermediate output files for target 'MCBSTM32E RAM'
+   deleting intermediate output files for target 'MCBSTM32E Trace'
+Rebuild target 'MCBSTM32E Flash'
+assembling startup_stm32f10x_hd.s...
+compiling system_stm32f10x.c...
+compiling BoilerPlate.c...
+compiling GLCD_16bitIF_STM32.c...
+compiling IRQ.c...
+compiling LED_Functions.c...
+compiling LCD_Functions.c...
+linking...
+Program Size: Code=4558 RO-data=6610 RW-data=40 ZI-data=1024  
+".\Flash\Blinky.axf" - 0 Errors, 0 Warning(s).
+Build target 'MCBSTM32E Flash'
+compiling BoilerPlate.c...
+compiling LED_Functions.c...
+compiling LCD_Functions.c...
+linking...
+Program Size: Code=4558 RO-data=6610 RW-data=40 ZI-data=1024  
+".\Flash\Blinky.axf" - 0 Errors, 0 Warning(s).
+Load "C:\\GitHub\\Boiler Plate\\Flash\\Blinky.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
