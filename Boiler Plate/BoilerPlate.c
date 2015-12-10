@@ -18,11 +18,10 @@
 
 #include "LED_Functions.h"
 #include "LCD_Functions.h"
+#include "Button_Functions.h"
 
 #define TRUE		1
 #define FALSE		0
-
-
 
 #define LED_NUM     8                   /* Number of user LEDs  */
 
@@ -46,6 +45,34 @@ void delay (int secs) {
 	}
 }
 
+void Vectored_Interrupt(int button){
+	GLCD_Clear(White);                    /* Clear graphical LCD display        */
+	GLCD_SetBackColor(Blue);
+	GLCD_SetTextColor(White);
+	
+	switch(button){
+		case USER_BUTTON:
+				GLCD_DisplayString(0, 0, __FI, "< --User Button -- >");
+			break;
+		case JOYSTICK_SELECT:
+							GLCD_DisplayString(0, 0, __FI, "< --JSTK Select -->");
+			break;
+		case JOYSTICK_UP:
+							GLCD_DisplayString(0, 0, __FI, "< --JSTK UP   -- >");
+			break;
+		case JOYSTICK_DOWN:
+							GLCD_DisplayString(0, 0, __FI, "< --JSTK DOWN -- >");
+			break;
+		case JOYSTICK_RIGHT:
+							GLCD_DisplayString(0, 0, __FI, "< --JSTK RIGHT-- >");
+			break;
+		case JOYSTICK_LEFT:
+							GLCD_DisplayString(0, 0, __FI, "< --JSTK LEFT -- >");
+			break;
+		default:
+			break;
+	}
+}
 
 /*----------------------------------------------------------------------------
   Main Program
@@ -82,7 +109,7 @@ int main (void) {
 	GLCD_SetBackColor(Blue);
 	GLCD_SetTextColor(White);
 	GLCD_DisplayString(0, 0, __FI, "< --Boiler Plate-- >");
-	GLCD_DisplayString(1, 0, __FI, " Hello World!!!  ");
+	GLCD_DisplayString(1, 0, __FI, "<---Hello  World--->");
 	GLCD_DisplayString(2, 0, __FI, "====================");
 	GLCD_SetBackColor(White);
 	GLCD_SetTextColor(Blue);
@@ -98,7 +125,9 @@ int main (void) {
 	//generally executes various functions and monitors various device
 	//states. It will be interrupted at regular intervals by the
 	//vectored timer interrupt as explained above!
-  	while (TRUE) {                           /* Loop forever                       */
+  	
+		
+		/** while (TRUE) {                           /* Loop forever /                       
 
 		displayTestMessage(3, 4, "LED Test1", loopCount);
 		//For all 8 LEDs do
@@ -120,13 +149,33 @@ int main (void) {
 			delay(1);
 			All_LEDs_Off();
 			delay(1);
+		} **/
+
+	//Here we initialise the Joystick driver
+	joyStick_Init();
+
+	//Here we initialise the User button as an input source
+	//If you wish to poll this source (PG8) for input you need
+	//this initialisation.
+	userButton_Init();
+	
+  //Here we initialise the User button as an interrupt source
+	//If you wish to use this source (PG8) for interrupt vectoring
+	//then you need	the above initialisation and this initialisation.
+	userButton_IntrEnable();
+
+  //Here we initialise the Joystick switches as interrupt sources
+  joyStick_IntrEnable_PG15_13();
+	joyStick_IntrEnable_PG7();
+	joyStick_IntrEnable_PD3();
+	
+		while(TRUE){ //loop forever, testing vectored interrupts
+			
 		}
-
-
+		
 		/* PUT MORE LED DISPLAY PATTERNS BELOW */
 
 
 		//Increment the loop count
 		loopCount += 1;
-  	}
 }

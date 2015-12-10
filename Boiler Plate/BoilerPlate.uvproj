@@ -432,6 +432,11 @@
               <FileType>1</FileType>
               <FilePath>.\LCD_Functions.c</FilePath>
             </File>
+            <File>
+              <FileName>Button_Functions.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Button_Functions.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -871,6 +876,11 @@
               <FileName>LCD_Functions.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\LCD_Functions.c</FilePath>
+            </File>
+            <File>
+              <FileName>Button_Functions.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Button_Functions.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -1312,6 +1322,11 @@
               <FileType>1</FileType>
               <FilePath>.\LCD_Functions.c</FilePath>
             </File>
+            <File>
+              <FileName>Button_Functions.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Button_Functions.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -1751,6 +1766,11 @@
               <FileName>LCD_Functions.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\LCD_Functions.c</FilePath>
+            </File>
+            <File>
+              <FileName>Button_Functions.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Button_Functions.c</FilePath>
             </File>
           </Files>
         </Group>
