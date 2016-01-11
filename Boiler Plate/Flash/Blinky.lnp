@@ -4,8 +4,8 @@
 ".\flash\boilerplate.o"
 ".\flash\glcd_16bitif_stm32.o"
 ".\flash\irq.o"
-".\flash\led_functions.o"
-".\flash\lcd_functions.o"
+".\flash\system_stm32f10x.o"
+".\flash\usart.o"
 --library_type=microlib --strict --scatter ".\Flash\Blinky.sct"
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

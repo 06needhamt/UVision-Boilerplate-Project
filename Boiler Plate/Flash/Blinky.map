@@ -7,21 +7,29 @@ Section Cross References
     startup_stm32f10x_hd.o(RESET) refers to startup_stm32f10x_hd.o(STACK) for __initial_sp
     startup_stm32f10x_hd.o(RESET) refers to startup_stm32f10x_hd.o(.text) for Reset_Handler
     startup_stm32f10x_hd.o(RESET) refers to irq.o(.text) for SysTick_Handler
+    startup_stm32f10x_hd.o(RESET) refers to usart.o(.text) for USART2_IRQHandler
     startup_stm32f10x_hd.o(.text) refers to system_stm32f10x.o(.text) for SystemInit
     startup_stm32f10x_hd.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
     system_stm32f10x.o(.text) refers to system_stm32f10x.o(.data) for SystemCoreClock
-    boilerplate.o(.text) refers to led_functions.o(.text) for LED_init
-    boilerplate.o(.text) refers to glcd_16bitif_stm32.o(.text) for GLCD_Init
-    boilerplate.o(.text) refers to lcd_functions.o(.text) for displayTestMessage
-    boilerplate.o(.text) refers to irq.o(.data) for clock_1s
+    boilerplate.o(.text) refers to glcd_16bitif_stm32.o(.text) for GLCD_DisplayString
+    boilerplate.o(.text) refers to printf3.o(i.__0sprintf$3) for __2sprintf
+    boilerplate.o(.text) refers to strlen.o(.text) for strlen
+    boilerplate.o(.text) refers to irq.o(.data) for ticks
+    boilerplate.o(.text) refers to boilerplate.o(.data) for oldLineNo
+    boilerplate.o(.text) refers to printf3.o(i.__0printf$3) for __2printf
+    boilerplate.o(.text) refers to usart.o(.text) for SUART_Init
+    boilerplate.o(.text) refers to getc.o(i.getc) for getc
     boilerplate.o(.text) refers to system_stm32f10x.o(.data) for SystemCoreClock
+    boilerplate.o(.text) refers to stdin.o(.data) for __stdin
     glcd_16bitif_stm32.o(.text) refers to glcd_16bitif_stm32.o(.data) for Himax
     glcd_16bitif_stm32.o(.text) refers to glcd_16bitif_stm32.o(.constdata) for Font_6x8_h
     irq.o(.text) refers to irq.o(.data) for ticks
-    lcd_functions.o(.text) refers to glcd_16bitif_stm32.o(.text) for GLCD_DisplayString
-    lcd_functions.o(.text) refers to printf1.o(i.__0sprintf$1) for __2sprintf
-    lcd_functions.o(.text) refers to strlen.o(.text) for strlen
-    lcd_functions.o(.text) refers to lcd_functions.o(.data) for oldLineNo
+    usart.o(.text) refers to putc.o(i.putc) for putc
+    usart.o(.text) refers to getc.o(i.getc) for getc
+    usart.o(.text) refers to usart.o(.bss) for rbuf
+    usart.o(.text) refers to usart.o(.data) for tx_restart
+    usart.o(.text) refers to stdout.o(.data) for __stdout
+    usart.o(.text) refers to stdin.o(.data) for __stdin
     entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
     entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
     entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
@@ -29,6 +37,8 @@ Section Cross References
     entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
     entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
     entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    getc.o(i.getc) refers to fgetc.o(.text) for fgetc
+    putc.o(i.putc) refers to fputc.o(i.fputc) for fputc
     printfb.o(i.__0fprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
     printfb.o(i.__0fprintf$bare) refers to fputc.o(i.fputc) for fputc
     printfb.o(i.__0printf$bare) refers to printfb.o(i._printf_core) for _printf_core
@@ -272,6 +282,23 @@ Section Cross References
     entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
     entry9a.o(.ARM.Collect$$$$0000000B) refers to boilerplate.o(.text) for main
     entry9b.o(.ARM.Collect$$$$0000000C) refers to boilerplate.o(.text) for main
+    fgetc.o(.text) refers (Special) to iusesemig.o(.text) for __I$use$semihosting$fgetc
+    fgetc.o(.text) refers (Special) to semi.o(.text) for __semihosting_library_function
+    fgetc_u.o(.text) refers (Special) to iusesemig.o(.text) for __I$use$semihosting$fgetc
+    fgetc_u.o(.text) refers (Special) to semi.o(.text) for __semihosting_library_function
+    fgetc_u.o(.text) refers to fgetc_u.o(.data) for .data
+    fgetc_u.o(.data) refers (Special) to iusesemig.o(.text) for __I$use$semihosting$fgetc
+    fgetc_u.o(.data) refers (Special) to semi.o(.text) for __semihosting_library_function
+    fgetc_b.o(.text) refers (Special) to iusesemig.o(.text) for __I$use$semihosting$fgetc
+    fgetc_b.o(.text) refers (Special) to semi.o(.text) for __semihosting_library_function
+    fgetc_b.o(.text) refers to fgetc_b.o(.data) for .data
+    fgetc_b.o(.data) refers (Special) to iusesemig.o(.text) for __I$use$semihosting$fgetc
+    fgetc_b.o(.data) refers (Special) to semi.o(.text) for __semihosting_library_function
+    fgetc_ub.o(.text) refers (Special) to iusesemig.o(.text) for __I$use$semihosting$fgetc
+    fgetc_ub.o(.text) refers (Special) to semi.o(.text) for __semihosting_library_function
+    fgetc_ub.o(.text) refers to fgetc_ub.o(.data) for .data
+    fgetc_ub.o(.data) refers (Special) to iusesemig.o(.text) for __I$use$semihosting$fgetc
+    fgetc_ub.o(.data) refers (Special) to semi.o(.text) for __semihosting_library_function
     fputc.o(i.fputc) refers (Special) to iusesemip.o(.text) for __I$use$semihosting$fputc
     fputc.o(i.fputc) refers (Special) to semi.o(.text) for __semihosting_library_function
     uldiv.o(.text) refers to llushr.o(.text) for __aeabi_llsr
@@ -301,10 +328,8 @@ Removing Unused input sections from the image.
     Removing glcd_16bitif_stm32.o(.revsh_text), (4 bytes).
     Removing irq.o(.rev16_text), (4 bytes).
     Removing irq.o(.revsh_text), (4 bytes).
-    Removing led_functions.o(.rev16_text), (4 bytes).
-    Removing led_functions.o(.revsh_text), (4 bytes).
-    Removing lcd_functions.o(.rev16_text), (4 bytes).
-    Removing lcd_functions.o(.revsh_text), (4 bytes).
+    Removing usart.o(.rev16_text), (4 bytes).
+    Removing usart.o(.revsh_text), (4 bytes).
     Removing dadd.o(.text), (334 bytes).
     Removing dmul.o(.text), (228 bytes).
     Removing ddiv.o(.text), (222 bytes).
@@ -312,7 +337,7 @@ Removing Unused input sections from the image.
     Removing cdrcmple.o(.text), (40 bytes).
     Removing depilogue.o(.text), (190 bytes).
 
-19 unused section(s) (total 1622 bytes) removed from the image.
+17 unused section(s) (total 1614 bytes) removed from the image.
 
 ==============================================================================
 
@@ -324,39 +349,47 @@ Image Symbol Table
 
     ../clib/microlib/division.c              0x00000000   Number         0  uldiv.o ABSOLUTE
     ../clib/microlib/division.c              0x00000000   Number         0  uidiv.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llushr.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llsshr.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llshl.o ABSOLUTE
-    ../clib/microlib/longlong.c              0x00000000   Number         0  llushr.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf4.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf5.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfb.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfa.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf8.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfb.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf0.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf1.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf2.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf3.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf7.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf6.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf5.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf4.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf3.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf2.o ABSOLUTE
     ../clib/microlib/printf/stubs.s          0x00000000   Number         0  stubs.o ABSOLUTE
+    ../clib/microlib/stdio/fgetc.c           0x00000000   Number         0  fgetc.o ABSOLUTE
+    ../clib/microlib/stdio/fgetc.c           0x00000000   Number         0  fgetc_ub.o ABSOLUTE
+    ../clib/microlib/stdio/fgetc.c           0x00000000   Number         0  fgetc_u.o ABSOLUTE
+    ../clib/microlib/stdio/fgetc.c           0x00000000   Number         0  fgetc_b.o ABSOLUTE
     ../clib/microlib/stdio/fputc.c           0x00000000   Number         0  fputc.o ABSOLUTE
+    ../clib/microlib/stdio/getc.c            0x00000000   Number         0  getc.o ABSOLUTE
+    ../clib/microlib/stdio/putc.c            0x00000000   Number         0  putc.o ABSOLUTE
     ../clib/microlib/stdio/semi.s            0x00000000   Number         0  semi.o ABSOLUTE
+    ../clib/microlib/stdio/streams.c         0x00000000   Number         0  stdin.o ABSOLUTE
     ../clib/microlib/stdio/streams.c         0x00000000   Number         0  stdout.o ABSOLUTE
     ../clib/microlib/string/strlen.c         0x00000000   Number         0  strlen.o ABSOLUTE
     ../clib/microlib/stubs.s                 0x00000000   Number         0  iusesemip.o ABSOLUTE
+    ../clib/microlib/stubs.s                 0x00000000   Number         0  iusesemig.o ABSOLUTE
     ../clib/microlib/stubs.s                 0x00000000   Number         0  iusefp.o ABSOLUTE
     ../fplib/microlib/fpadd.c                0x00000000   Number         0  dadd.o ABSOLUTE
     ../fplib/microlib/fpdiv.c                0x00000000   Number         0  ddiv.o ABSOLUTE
@@ -369,10 +402,8 @@ Image Symbol Table
     GLCD_16bitIF_STM32.c                     0x00000000   Number         0  glcd_16bitif_stm32.o ABSOLUTE
     IRQ.c                                    0x00000000   Number         0  irq.o ABSOLUTE
     IRQ.c                                    0x00000000   Number         0  irq.o ABSOLUTE
-    LCD_Functions.c                          0x00000000   Number         0  lcd_functions.o ABSOLUTE
-    LCD_Functions.c                          0x00000000   Number         0  lcd_functions.o ABSOLUTE
-    LED_Functions.c                          0x00000000   Number         0  led_functions.o ABSOLUTE
-    LED_Functions.c                          0x00000000   Number         0  led_functions.o ABSOLUTE
+    Usart.c                                  0x00000000   Number         0  usart.o ABSOLUTE
+    Usart.c                                  0x00000000   Number         0  usart.o ABSOLUTE
     cdrcmple.s                               0x00000000   Number         0  cdrcmple.o ABSOLUTE
     dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
     handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
@@ -396,37 +427,50 @@ Image Symbol Table
     SetSysClockTo72                          0x08000169   Thumb Code   212  system_stm32f10x.o(.text)
     SetSysClock                              0x0800023d   Thumb Code     8  system_stm32f10x.o(.text)
     .text                                    0x08000344   Section        0  boilerplate.o(.text)
-    .text                                    0x08000540   Section        0  glcd_16bitif_stm32.o(.text)
-    delay                                    0x08000541   Thumb Code    14  glcd_16bitif_stm32.o(.text)
-    rd_reg                                   0x0800054f   Thumb Code    20  glcd_16bitif_stm32.o(.text)
-    wr_cmd                                   0x08000f5d   Thumb Code     8  glcd_16bitif_stm32.o(.text)
-    wr_dat                                   0x08000f65   Thumb Code     8  glcd_16bitif_stm32.o(.text)
-    wr_dat_only                              0x08000f6d   Thumb Code     8  glcd_16bitif_stm32.o(.text)
-    wr_reg                                   0x08000f75   Thumb Code    40  glcd_16bitif_stm32.o(.text)
-    .text                                    0x08000f9c   Section        0  irq.o(.text)
-    .text                                    0x08000fc4   Section        0  led_functions.o(.text)
-    .text                                    0x08001054   Section        0  lcd_functions.o(.text)
-    .text                                    0x080010f8   Section        0  strlen.o(.text)
-    .text                                    0x08001106   Section        0  uidiv.o(.text)
-    .text                                    0x08001134   Section       36  init.o(.text)
-    i.__0sprintf$1                           0x08001158   Section        0  printf1.o(i.__0sprintf$1)
-    i.__scatterload_copy                     0x08001180   Section       14  handlers.o(i.__scatterload_copy)
-    i.__scatterload_null                     0x0800118e   Section        2  handlers.o(i.__scatterload_null)
-    i.__scatterload_zeroinit                 0x08001190   Section       14  handlers.o(i.__scatterload_zeroinit)
-    i._printf_core                           0x080011a0   Section        0  printf1.o(i._printf_core)
-    _printf_core                             0x080011a1   Thumb Code   334  printf1.o(i._printf_core)
-    i._sputc                                 0x080012f4   Section        0  printf1.o(i._sputc)
-    _sputc                                   0x080012f5   Thumb Code    10  printf1.o(i._sputc)
-    .constdata                               0x080012fe   Section     6272  glcd_16bitif_stm32.o(.constdata)
+    .text                                    0x080011d8   Section        0  glcd_16bitif_stm32.o(.text)
+    delay                                    0x080011d9   Thumb Code    14  glcd_16bitif_stm32.o(.text)
+    rd_reg                                   0x080011e7   Thumb Code    20  glcd_16bitif_stm32.o(.text)
+    wr_cmd                                   0x08001bf5   Thumb Code     8  glcd_16bitif_stm32.o(.text)
+    wr_dat                                   0x08001bfd   Thumb Code     8  glcd_16bitif_stm32.o(.text)
+    wr_dat_only                              0x08001c05   Thumb Code     8  glcd_16bitif_stm32.o(.text)
+    wr_reg                                   0x08001c0d   Thumb Code    40  glcd_16bitif_stm32.o(.text)
+    .text                                    0x08001c34   Section        0  irq.o(.text)
+    .text                                    0x08001d38   Section        0  usart.o(.text)
+    .text                                    0x08001ff8   Section        0  strlen.o(.text)
+    .text                                    0x08002006   Section        0  fgetc.o(.text)
+    .text                                    0x0800200e   Section        0  uidiv.o(.text)
+    .text                                    0x0800203c   Section       36  init.o(.text)
+    .text                                    0x08002060   Section        0  iusesemig.o(.text)
+    .text                                    0x08002060   Section        0  semi.o(.text)
+    .text                                    0x08002060   Section        0  iusesemip.o(.text)
+    i.__0printf$3                            0x08002060   Section        0  printf3.o(i.__0printf$3)
+    i.__0sprintf$3                           0x08002080   Section        0  printf3.o(i.__0sprintf$3)
+    i.__scatterload_copy                     0x080020a8   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x080020b6   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x080020b8   Section       14  handlers.o(i.__scatterload_zeroinit)
+    i._printf_core                           0x080020c8   Section        0  printf3.o(i._printf_core)
+    _printf_core                             0x080020c9   Thumb Code   436  printf3.o(i._printf_core)
+    i._sputc                                 0x08002280   Section        0  printf3.o(i._sputc)
+    _sputc                                   0x08002281   Thumb Code    10  printf3.o(i._sputc)
+    i.fputc                                  0x0800228a   Section        0  fputc.o(i.fputc)
+    i.getc                                   0x0800229c   Section        0  getc.o(i.getc)
+    i.putc                                   0x080022a0   Section        0  putc.o(i.putc)
+    .constdata                               0x080022a4   Section     6272  glcd_16bitif_stm32.o(.constdata)
     .data                                    0x20000000   Section       20  system_stm32f10x.o(.data)
-    .data                                    0x20000014   Section        5  glcd_16bitif_stm32.o(.data)
-    Color                                    0x20000014   Data           4  glcd_16bitif_stm32.o(.data)
-    Himax                                    0x20000018   Data           1  glcd_16bitif_stm32.o(.data)
-    .data                                    0x2000001c   Section        5  irq.o(.data)
-    ticks                                    0x2000001c   Data           4  irq.o(.data)
-    .data                                    0x20000024   Section        4  lcd_functions.o(.data)
-    oldLineNo                                0x20000024   Data           4  lcd_functions.o(.data)
-    STACK                                    0x20000028   Section     1024  startup_stm32f10x_hd.o(STACK)
+    .data                                    0x20000014   Section        4  boilerplate.o(.data)
+    oldLineNo                                0x20000014   Data           4  boilerplate.o(.data)
+    .data                                    0x20000018   Section        5  glcd_16bitif_stm32.o(.data)
+    Color                                    0x20000018   Data           4  glcd_16bitif_stm32.o(.data)
+    Himax                                    0x2000001c   Data           1  glcd_16bitif_stm32.o(.data)
+    .data                                    0x20000020   Section       18  irq.o(.data)
+    .data                                    0x20000034   Section        4  usart.o(.data)
+    tx_restart                               0x20000034   Data           4  usart.o(.data)
+    .data                                    0x20000038   Section        4  stdin.o(.data)
+    .data                                    0x2000003c   Section        4  stdout.o(.data)
+    .bss                                     0x20000040   Section      784  usart.o(.bss)
+    rbuf                                     0x20000040   Data         264  usart.o(.bss)
+    tbuf                                     0x20000148   Data         264  usart.o(.bss)
+    STACK                                    0x20000350   Section     1024  startup_stm32f10x_hd.o(STACK)
 
     Global Symbols
 
@@ -501,7 +545,6 @@ Image Symbol Table
     SVC_Handler                              0x08000157   Thumb Code     2  startup_stm32f10x_hd.o(.text)
     DebugMon_Handler                         0x08000159   Thumb Code     2  startup_stm32f10x_hd.o(.text)
     PendSV_Handler                           0x0800015b   Thumb Code     2  startup_stm32f10x_hd.o(.text)
-    ADC1_2_IRQHandler                        0x0800015f   Thumb Code     0  startup_stm32f10x_hd.o(.text)
     ADC3_IRQHandler                          0x0800015f   Thumb Code     0  startup_stm32f10x_hd.o(.text)
     CAN1_RX1_IRQHandler                      0x0800015f   Thumb Code     0  startup_stm32f10x_hd.o(.text)
     CAN1_SCE_IRQHandler                      0x0800015f   Thumb Code     0  startup_stm32f10x_hd.o(.text)
@@ -517,12 +560,9 @@ Image Symbol Table
     DMA2_Channel3_IRQHandler                 0x0800015f   Thumb Code     0  startup_stm32f10x_hd.o(.text)
     DMA2_Channel4_5_IRQHandler               0x0800015f   Thumb Code     0  startup_stm32f10x_hd.o(.text)
     EXTI0_IRQHandler                         0x0800015f   Thumb Code     0  startup_stm32f10x_hd.o(.text)
-    EXTI15_10_IRQHandler                     0x0800015f   Thumb Code     0  startup_stm32f10x_hd.o(.text)
     EXTI1_IRQHandler                         0x0800015f   Thumb Code     0  startup_stm32f10x_hd.o(.text)
     EXTI2_IRQHandler                         0x0800015f   Thumb Code     0  startup_stm32f10x_hd.o(.text)
-    EXTI3_IRQHandler                         0x0800015f   Thumb Code     0  startup_stm32f10x_hd.o(.text)
     EXTI4_IRQHandler                         0x0800015f   Thumb Code     0  startup_stm32f10x_hd.o(.text)
-    EXTI9_5_IRQHandler                       0x0800015f   Thumb Code     0  startup_stm32f10x_hd.o(.text)
     FLASH_IRQHandler                         0x0800015f   Thumb Code     0  startup_stm32f10x_hd.o(.text)
     FSMC_IRQHandler                          0x0800015f   Thumb Code     0  startup_stm32f10x_hd.o(.text)
     I2C1_ER_IRQHandler                       0x0800015f   Thumb Code     0  startup_stm32f10x_hd.o(.text)
@@ -555,7 +595,6 @@ Image Symbol Table
     UART4_IRQHandler                         0x0800015f   Thumb Code     0  startup_stm32f10x_hd.o(.text)
     UART5_IRQHandler                         0x0800015f   Thumb Code     0  startup_stm32f10x_hd.o(.text)
     USART1_IRQHandler                        0x0800015f   Thumb Code     0  startup_stm32f10x_hd.o(.text)
-    USART2_IRQHandler                        0x0800015f   Thumb Code     0  startup_stm32f10x_hd.o(.text)
     USART3_IRQHandler                        0x0800015f   Thumb Code     0  startup_stm32f10x_hd.o(.text)
     USBWakeUp_IRQHandler                     0x0800015f   Thumb Code     0  startup_stm32f10x_hd.o(.text)
     USB_HP_CAN1_TX_IRQHandler                0x0800015f   Thumb Code     0  startup_stm32f10x_hd.o(.text)
@@ -563,50 +602,94 @@ Image Symbol Table
     WWDG_IRQHandler                          0x0800015f   Thumb Code     0  startup_stm32f10x_hd.o(.text)
     SystemInit                               0x08000245   Thumb Code    78  system_stm32f10x.o(.text)
     SystemCoreClockUpdate                    0x08000293   Thumb Code   142  system_stm32f10x.o(.text)
-    delay                                    0x08000345   Thumb Code    28  boilerplate.o(.text)
-    main                                     0x08000361   Thumb Code   324  boilerplate.o(.text)
-    GLCD_Init                                0x08000563   Thumb Code  1618  glcd_16bitif_stm32.o(.text)
-    GLCD_SetWindow                           0x08000bb5   Thumb Code   168  glcd_16bitif_stm32.o(.text)
-    GLCD_WindowMax                           0x08000c5d   Thumb Code    18  glcd_16bitif_stm32.o(.text)
-    GLCD_PutPixel                            0x08000c6f   Thumb Code   118  glcd_16bitif_stm32.o(.text)
-    GLCD_SetTextColor                        0x08000ce5   Thumb Code     6  glcd_16bitif_stm32.o(.text)
-    GLCD_SetBackColor                        0x08000ceb   Thumb Code     6  glcd_16bitif_stm32.o(.text)
-    GLCD_Clear                               0x08000cf1   Thumb Code    42  glcd_16bitif_stm32.o(.text)
-    GLCD_DrawChar                            0x08000d1b   Thumb Code   150  glcd_16bitif_stm32.o(.text)
-    GLCD_DisplayChar                         0x08000db1   Thumb Code    84  glcd_16bitif_stm32.o(.text)
-    GLCD_DisplayString                       0x08000e05   Thumb Code    40  glcd_16bitif_stm32.o(.text)
-    GLCD_ClearLn                             0x08000e2d   Thumb Code    94  glcd_16bitif_stm32.o(.text)
-    GLCD_Bargraph                            0x08000e8b   Thumb Code    98  glcd_16bitif_stm32.o(.text)
-    GLCD_Bitmap                              0x08000eed   Thumb Code    82  glcd_16bitif_stm32.o(.text)
-    GLCD_ScrollVertical                      0x08000f3f   Thumb Code     2  glcd_16bitif_stm32.o(.text)
-    GLCD_WrCmd                               0x08000f41   Thumb Code    12  glcd_16bitif_stm32.o(.text)
-    GLCD_WrReg                               0x08000f4d   Thumb Code    16  glcd_16bitif_stm32.o(.text)
-    SysTick_Handler                          0x08000f9d   Thumb Code    30  irq.o(.text)
-    LED_init                                 0x08000fc5   Thumb Code    50  led_functions.o(.text)
-    LED_On                                   0x08000ff7   Thumb Code    24  led_functions.o(.text)
-    LED_Off                                  0x0800100f   Thumb Code    24  led_functions.o(.text)
-    All_LEDs_On                              0x08001027   Thumb Code    18  led_functions.o(.text)
-    All_LEDs_Off                             0x08001039   Thumb Code    18  led_functions.o(.text)
-    displayTestMessage                       0x08001055   Thumb Code   148  lcd_functions.o(.text)
-    strlen                                   0x080010f9   Thumb Code    14  strlen.o(.text)
-    __aeabi_uidiv                            0x08001107   Thumb Code     0  uidiv.o(.text)
-    __aeabi_uidivmod                         0x08001107   Thumb Code    44  uidiv.o(.text)
-    __scatterload                            0x08001135   Thumb Code    28  init.o(.text)
-    __scatterload_rt2                        0x08001135   Thumb Code     0  init.o(.text)
-    __0sprintf$1                             0x08001159   Thumb Code    34  printf1.o(i.__0sprintf$1)
-    __1sprintf$1                             0x08001159   Thumb Code     0  printf1.o(i.__0sprintf$1)
-    __2sprintf                               0x08001159   Thumb Code     0  printf1.o(i.__0sprintf$1)
-    __scatterload_copy                       0x08001181   Thumb Code    14  handlers.o(i.__scatterload_copy)
-    __scatterload_null                       0x0800118f   Thumb Code     2  handlers.o(i.__scatterload_null)
-    __scatterload_zeroinit                   0x08001191   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
-    Font_6x8_h                               0x080012fe   Data         896  glcd_16bitif_stm32.o(.constdata)
-    Font_16x24_h                             0x0800167e   Data        5376  glcd_16bitif_stm32.o(.constdata)
-    Region$$Table$$Base                      0x08002b80   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x08002ba0   Number         0  anon$$obj.o(Region$$Table)
+    delay10th                                0x08000345   Thumb Code    16  boilerplate.o(.text)
+    delay                                    0x08000355   Thumb Code    22  boilerplate.o(.text)
+    delaySecs                                0x0800036b   Thumb Code    18  boilerplate.o(.text)
+    displayTestMessage                       0x0800037d   Thumb Code   148  boilerplate.o(.text)
+    ADC_init                                 0x08000411   Thumb Code   184  boilerplate.o(.text)
+    LED_init                                 0x080004c9   Thumb Code    50  boilerplate.o(.text)
+    pin_PA4_For_Speaker                      0x080004fb   Thumb Code    50  boilerplate.o(.text)
+    generate_Tone_On_Speaker                 0x0800052d   Thumb Code    78  boilerplate.o(.text)
+    generate_FSK_Tone                        0x0800057b   Thumb Code    68  boilerplate.o(.text)
+    userButton_Init                          0x080005bf   Thumb Code    36  boilerplate.o(.text)
+    joyStick_Init                            0x080005e3   Thumb Code    58  boilerplate.o(.text)
+    userButton_IntrEnable                    0x0800061d   Thumb Code    96  boilerplate.o(.text)
+    joyStick_IntrEnable_PG15_13              0x0800067d   Thumb Code   154  boilerplate.o(.text)
+    joyStick_IntrEnable_PG7                  0x08000717   Thumb Code   160  boilerplate.o(.text)
+    joyStick_IntrEnable_PD3                  0x080007b7   Thumb Code    92  boilerplate.o(.text)
+    LED_On                                   0x08000813   Thumb Code    20  boilerplate.o(.text)
+    LED_Off                                  0x08000827   Thumb Code    24  boilerplate.o(.text)
+    All_LEDs_On                              0x0800083f   Thumb Code    14  boilerplate.o(.text)
+    All_LEDs_Off                             0x0800084d   Thumb Code    18  boilerplate.o(.text)
+    stm32_IwdgSetup                          0x0800085f   Thumb Code    32  boilerplate.o(.text)
+    Display_Test_Menu                        0x0800087f   Thumb Code    58  boilerplate.o(.text)
+    main                                     0x080008b9   Thumb Code  2162  boilerplate.o(.text)
+    GLCD_Init                                0x080011fb   Thumb Code  1618  glcd_16bitif_stm32.o(.text)
+    GLCD_SetWindow                           0x0800184d   Thumb Code   168  glcd_16bitif_stm32.o(.text)
+    GLCD_WindowMax                           0x080018f5   Thumb Code    18  glcd_16bitif_stm32.o(.text)
+    GLCD_PutPixel                            0x08001907   Thumb Code   118  glcd_16bitif_stm32.o(.text)
+    GLCD_SetTextColor                        0x0800197d   Thumb Code     6  glcd_16bitif_stm32.o(.text)
+    GLCD_SetBackColor                        0x08001983   Thumb Code     6  glcd_16bitif_stm32.o(.text)
+    GLCD_Clear                               0x08001989   Thumb Code    42  glcd_16bitif_stm32.o(.text)
+    GLCD_DrawChar                            0x080019b3   Thumb Code   150  glcd_16bitif_stm32.o(.text)
+    GLCD_DisplayChar                         0x08001a49   Thumb Code    84  glcd_16bitif_stm32.o(.text)
+    GLCD_DisplayString                       0x08001a9d   Thumb Code    40  glcd_16bitif_stm32.o(.text)
+    GLCD_ClearLn                             0x08001ac5   Thumb Code    94  glcd_16bitif_stm32.o(.text)
+    GLCD_Bargraph                            0x08001b23   Thumb Code    98  glcd_16bitif_stm32.o(.text)
+    GLCD_Bitmap                              0x08001b85   Thumb Code    82  glcd_16bitif_stm32.o(.text)
+    GLCD_ScrollVertical                      0x08001bd7   Thumb Code     2  glcd_16bitif_stm32.o(.text)
+    GLCD_WrCmd                               0x08001bd9   Thumb Code    12  glcd_16bitif_stm32.o(.text)
+    GLCD_WrReg                               0x08001be5   Thumb Code    16  glcd_16bitif_stm32.o(.text)
+    SysTick_Handler                          0x08001c35   Thumb Code    18  irq.o(.text)
+    ADC1_2_IRQHandler                        0x08001c47   Thumb Code    40  irq.o(.text)
+    EXTI3_IRQHandler                         0x08001c6f   Thumb Code    30  irq.o(.text)
+    EXTI9_5_IRQHandler                       0x08001c8d   Thumb Code    58  irq.o(.text)
+    EXTI15_10_IRQHandler                     0x08001cc7   Thumb Code    86  irq.o(.text)
+    USART2_IRQHandler                        0x08001d39   Thumb Code   146  usart.o(.text)
+    USART2_Init                              0x08001dcb   Thumb Code   188  usart.o(.text)
+    buffer_Init                              0x08001e87   Thumb Code    24  usart.o(.text)
+    SendChar                                 0x08001e9f   Thumb Code    70  usart.o(.text)
+    GetKey                                   0x08001ee5   Thumb Code    38  usart.o(.text)
+    writeStr                                 0x08001f0b   Thumb Code   118  usart.o(.text)
+    writeStrln                               0x08001f81   Thumb Code    26  usart.o(.text)
+    getStr                                   0x08001f9b   Thumb Code    32  usart.o(.text)
+    SUART_Init                               0x08001fbb   Thumb Code    12  usart.o(.text)
+    strlen                                   0x08001ff9   Thumb Code    14  strlen.o(.text)
+    fgetc                                    0x08002007   Thumb Code     8  fgetc.o(.text)
+    __aeabi_uidiv                            0x0800200f   Thumb Code     0  uidiv.o(.text)
+    __aeabi_uidivmod                         0x0800200f   Thumb Code    44  uidiv.o(.text)
+    __scatterload                            0x0800203d   Thumb Code    28  init.o(.text)
+    __scatterload_rt2                        0x0800203d   Thumb Code     0  init.o(.text)
+    __0printf$3                              0x08002061   Thumb Code    22  printf3.o(i.__0printf$3)
+    __1printf$3                              0x08002061   Thumb Code     0  printf3.o(i.__0printf$3)
+    __2printf                                0x08002061   Thumb Code     0  printf3.o(i.__0printf$3)
+    __I$use$semihosting$fgetc                0x08002061   Thumb Code     0  iusesemig.o(.text)
+    __I$use$semihosting$fputc                0x08002061   Thumb Code     0  iusesemip.o(.text)
+    __semihosting_library_function           0x08002061   Thumb Code     0  semi.o(.text)
+    __0sprintf$3                             0x08002081   Thumb Code    34  printf3.o(i.__0sprintf$3)
+    __1sprintf$3                             0x08002081   Thumb Code     0  printf3.o(i.__0sprintf$3)
+    __2sprintf                               0x08002081   Thumb Code     0  printf3.o(i.__0sprintf$3)
+    __scatterload_copy                       0x080020a9   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x080020b7   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x080020b9   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    fputc                                    0x0800228b   Thumb Code    18  fputc.o(i.fputc)
+    getc                                     0x0800229d   Thumb Code     4  getc.o(i.getc)
+    putc                                     0x080022a1   Thumb Code     4  putc.o(i.putc)
+    Font_6x8_h                               0x080022a4   Data         896  glcd_16bitif_stm32.o(.constdata)
+    Font_16x24_h                             0x08002624   Data        5376  glcd_16bitif_stm32.o(.constdata)
+    Region$$Table$$Base                      0x08003b24   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08003b44   Number         0  anon$$obj.o(Region$$Table)
     SystemCoreClock                          0x20000000   Data           4  system_stm32f10x.o(.data)
     AHBPrescTable                            0x20000004   Data          16  system_stm32f10x.o(.data)
-    clock_1s                                 0x20000020   Data           1  irq.o(.data)
-    __initial_sp                             0x20000428   Data           0  startup_stm32f10x_hd.o(STACK)
+    AD_done                                  0x20000020   Data           1  irq.o(.data)
+    ticks                                    0x20000024   Data           4  irq.o(.data)
+    user_btn_int                             0x20000028   Data           4  irq.o(.data)
+    joystick_int                             0x2000002c   Data           4  irq.o(.data)
+    AD_last                                  0x20000030   Data           2  irq.o(.data)
+    __stdin                                  0x20000038   Data           4  stdin.o(.data)
+    __stdout                                 0x2000003c   Data           4  stdout.o(.data)
+    strBuffer                                0x20000250   Data         256  usart.o(.bss)
+    __initial_sp                             0x20000750   Data           0  startup_stm32f10x_hd.o(STACK)
 
 
 
@@ -616,56 +699,66 @@ Memory Map of the image
 
   Image Entry point : 0x08000131
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00002bc8, Max: 0x00100000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00003b84, Max: 0x00100000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x00002ba0, Max: 0x00100000, ABSOLUTE)
+    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x00003b44, Max: 0x00100000, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x08000000   0x00000130   Data   RO            3    RESET               startup_stm32f10x_hd.o
-    0x08000130   0x00000000   Code   RO          189  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
-    0x08000130   0x00000004   Code   RO          455    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
-    0x08000134   0x00000004   Code   RO          458    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
-    0x08000138   0x00000000   Code   RO          460    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
-    0x08000138   0x00000000   Code   RO          462    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
-    0x08000138   0x00000008   Code   RO          463    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
-    0x08000140   0x00000000   Code   RO          465    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
-    0x08000140   0x00000000   Code   RO          467    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
-    0x08000140   0x00000004   Code   RO          456    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x08000130   0x00000000   Code   RO          233  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x08000130   0x00000004   Code   RO          505    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x08000134   0x00000004   Code   RO          508    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x08000138   0x00000000   Code   RO          510    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x08000138   0x00000000   Code   RO          512    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x08000138   0x00000008   Code   RO          513    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x08000140   0x00000000   Code   RO          515    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x08000140   0x00000000   Code   RO          517    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x08000140   0x00000004   Code   RO          506    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
     0x08000144   0x00000024   Code   RO            4    .text               startup_stm32f10x_hd.o
     0x08000168   0x000001dc   Code   RO           12    .text               system_stm32f10x.o
-    0x08000344   0x000001fc   Code   RO           55    .text               boilerplate.o
-    0x08000540   0x00000a5c   Code   RO           97    .text               glcd_16bitif_stm32.o
-    0x08000f9c   0x00000028   Code   RO          127    .text               irq.o
-    0x08000fc4   0x00000090   Code   RO          150    .text               led_functions.o
-    0x08001054   0x000000a4   Code   RO          170    .text               lcd_functions.o
-    0x080010f8   0x0000000e   Code   RO          192    .text               mc_w.l(strlen.o)
-    0x08001106   0x0000002c   Code   RO          472    .text               mc_w.l(uidiv.o)
-    0x08001132   0x00000002   PAD
-    0x08001134   0x00000024   Code   RO          487    .text               mc_w.l(init.o)
-    0x08001158   0x00000028   Code   RO          241    i.__0sprintf$1      mc_w.l(printf1.o)
-    0x08001180   0x0000000e   Code   RO          501    i.__scatterload_copy  mc_w.l(handlers.o)
-    0x0800118e   0x00000002   Code   RO          502    i.__scatterload_null  mc_w.l(handlers.o)
-    0x08001190   0x0000000e   Code   RO          503    i.__scatterload_zeroinit  mc_w.l(handlers.o)
-    0x0800119e   0x00000002   PAD
-    0x080011a0   0x00000154   Code   RO          246    i._printf_core      mc_w.l(printf1.o)
-    0x080012f4   0x0000000a   Code   RO          248    i._sputc            mc_w.l(printf1.o)
-    0x080012fe   0x00001880   Data   RO           98    .constdata          glcd_16bitif_stm32.o
-    0x08002b7e   0x00000002   PAD
-    0x08002b80   0x00000020   Data   RO          499    Region$$Table       anon$$obj.o
+    0x08000344   0x00000e94   Code   RO           55    .text               boilerplate.o
+    0x080011d8   0x00000a5c   Code   RO           95    .text               glcd_16bitif_stm32.o
+    0x08001c34   0x00000104   Code   RO          125    .text               irq.o
+    0x08001d38   0x000002c0   Code   RO          148    .text               usart.o
+    0x08001ff8   0x0000000e   Code   RO          242    .text               mc_w.l(strlen.o)
+    0x08002006   0x00000008   Code   RO          519    .text               mc_w.l(fgetc.o)
+    0x0800200e   0x0000002c   Code   RO          532    .text               mc_w.l(uidiv.o)
+    0x0800203a   0x00000002   PAD
+    0x0800203c   0x00000024   Code   RO          547    .text               mc_w.l(init.o)
+    0x08002060   0x00000000   Code   RO          549    .text               mc_w.l(semi.o)
+    0x08002060   0x00000000   Code   RO          556    .text               mc_w.l(iusesemig.o)
+    0x08002060   0x00000000   Code   RO          557    .text               mc_w.l(iusesemip.o)
+    0x08002060   0x00000020   Code   RO          333    i.__0printf$3       mc_w.l(printf3.o)
+    0x08002080   0x00000028   Code   RO          335    i.__0sprintf$3      mc_w.l(printf3.o)
+    0x080020a8   0x0000000e   Code   RO          562    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x080020b6   0x00000002   Code   RO          563    i.__scatterload_null  mc_w.l(handlers.o)
+    0x080020b8   0x0000000e   Code   RO          564    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x080020c6   0x00000002   PAD
+    0x080020c8   0x000001b8   Code   RO          340    i._printf_core      mc_w.l(printf3.o)
+    0x08002280   0x0000000a   Code   RO          342    i._sputc            mc_w.l(printf3.o)
+    0x0800228a   0x00000012   Code   RO          530    i.fputc             mc_w.l(fputc.o)
+    0x0800229c   0x00000004   Code   RO          236    i.getc              mc_w.l(getc.o)
+    0x080022a0   0x00000004   Code   RO          238    i.putc              mc_w.l(putc.o)
+    0x080022a4   0x00001880   Data   RO           96    .constdata          glcd_16bitif_stm32.o
+    0x08003b24   0x00000020   Data   RO          560    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x00000428, Max: 0x00018000, ABSOLUTE)
+    Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x00000750, Max: 0x00018000, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x20000000   0x00000014   Data   RW           13    .data               system_stm32f10x.o
-    0x20000014   0x00000005   Data   RW           99    .data               glcd_16bitif_stm32.o
-    0x20000019   0x00000003   PAD
-    0x2000001c   0x00000005   Data   RW          128    .data               irq.o
-    0x20000021   0x00000003   PAD
-    0x20000024   0x00000004   Data   RW          171    .data               lcd_functions.o
-    0x20000028   0x00000400   Zero   RW            1    STACK               startup_stm32f10x_hd.o
+    0x20000014   0x00000004   Data   RW           56    .data               boilerplate.o
+    0x20000018   0x00000005   Data   RW           97    .data               glcd_16bitif_stm32.o
+    0x2000001d   0x00000003   PAD
+    0x20000020   0x00000012   Data   RW          126    .data               irq.o
+    0x20000032   0x00000002   PAD
+    0x20000034   0x00000004   Data   RW          150    .data               usart.o
+    0x20000038   0x00000004   Data   RW          240    .data               mc_w.l(stdin.o)
+    0x2000003c   0x00000004   Data   RW          241    .data               mc_w.l(stdout.o)
+    0x20000040   0x00000310   Zero   RW          149    .bss                usart.o
+    0x20000350   0x00000400   Zero   RW            1    STACK               startup_stm32f10x_hd.o
 
 
 ==============================================================================
@@ -675,18 +768,17 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       508        156          0          0          0      22824   boilerplate.o
-      2652         60       6272          5          0       7404   glcd_16bitif_stm32.o
-        40         10          0          5          0        513   irq.o
-       164         16          0          4          0        661   lcd_functions.o
-       144         10          0          0          0        831   led_functions.o
-        36          8        304          0       1024        728   startup_stm32f10x_hd.o
-       476         36          0         20          0     208771   system_stm32f10x.o
+      3732       1004          0          4          0      27882   boilerplate.o
+      2652         60       6272          5          0       7576   glcd_16bitif_stm32.o
+       260         28          0         18          0       1255   irq.o
+        36          8        304          0       1024        756   startup_stm32f10x_hd.o
+       476         36          0         20          0     208859   system_stm32f10x.o
+       704         50          0          4        784       3162   usart.o
 
     ----------------------------------------------------------------------
-      4020        296       6610         40       1024     241732   Object Totals
+      7860       1186       6608         56       1808     249490   Object Totals
          0          0         32          0          0          0   (incl. Generated)
-         0          0          2          6          0          0   (incl. Padding)
+         0          0          0          5          0          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -700,24 +792,33 @@ Image component sizes
          0          0          0          0          0          0   entry7b.o
          0          0          0          0          0          0   entry8b.o
          8          4          0          0          0          0   entry9a.o
+         8          0          0          0          0         68   fgetc.o
+        18          0          0          0          0         80   fputc.o
+         4          0          0          0          0         68   getc.o
         30          0          0          0          0          0   handlers.o
         36          8          0          0          0         68   init.o
-       390         12          0          0          0        248   printf1.o
+         0          0          0          0          0          0   iusesemig.o
+         0          0          0          0          0          0   iusesemip.o
+       522         20          0          0          0        332   printf3.o
+         4          0          0          0          0         68   putc.o
+         0          0          0          0          0          0   semi.o
+         0          0          0          4          0          0   stdin.o
+         0          0          0          4          0          0   stdout.o
         14          0          0          0          0         68   strlen.o
         44          0          0          0          0         80   uidiv.o
 
     ----------------------------------------------------------------------
-       538         28          0          0          0        464   Library Totals
+       704         36          0          8          0        832   Library Totals
          4          0          0          0          0          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
 
-       534         28          0          0          0        464   mc_w.l
+       700         36          0          8          0        832   mc_w.l
 
     ----------------------------------------------------------------------
-       538         28          0          0          0        464   Library Totals
+       704         36          0          8          0        832   Library Totals
 
     ----------------------------------------------------------------------
 
@@ -726,15 +827,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      4558        324       6610         40       1024     241728   Grand Totals
-      4558        324       6610         40       1024     241728   ELF Image Totals
-      4558        324       6610         40          0          0   ROM Totals
+      8564       1222       6608         64       1808     249490   Grand Totals
+      8564       1222       6608         64       1808     249490   ELF Image Totals
+      8564       1222       6608         64          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                11168 (  10.91kB)
-    Total RW  Size (RW Data + ZI Data)              1064 (   1.04kB)
-    Total ROM Size (Code + RO Data + RW Data)      11208 (  10.95kB)
+    Total RO  Size (Code + RO Data)                15172 (  14.82kB)
+    Total RW  Size (RW Data + ZI Data)              1872 (   1.83kB)
+    Total ROM Size (Code + RO Data + RW Data)      15236 (  14.88kB)
 
 ==============================================================================
 

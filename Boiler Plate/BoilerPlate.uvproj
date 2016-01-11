@@ -423,14 +423,14 @@
               <FilePath>.\IRQ.c</FilePath>
             </File>
             <File>
-              <FileName>LED_Functions.c</FileName>
+              <FileName>system_stm32f10x.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\LED_Functions.c</FilePath>
+              <FilePath>.\system_stm32f10x.c</FilePath>
             </File>
             <File>
-              <FileName>LCD_Functions.c</FileName>
+              <FileName>Usart.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\LCD_Functions.c</FilePath>
+              <FilePath>.\Usart.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -863,14 +863,14 @@
               <FilePath>.\IRQ.c</FilePath>
             </File>
             <File>
-              <FileName>LED_Functions.c</FileName>
+              <FileName>system_stm32f10x.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\LED_Functions.c</FilePath>
+              <FilePath>.\system_stm32f10x.c</FilePath>
             </File>
             <File>
-              <FileName>LCD_Functions.c</FileName>
+              <FileName>Usart.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\LCD_Functions.c</FilePath>
+              <FilePath>.\Usart.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -1303,14 +1303,14 @@
               <FilePath>.\IRQ.c</FilePath>
             </File>
             <File>
-              <FileName>LED_Functions.c</FileName>
+              <FileName>system_stm32f10x.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\LED_Functions.c</FilePath>
+              <FilePath>.\system_stm32f10x.c</FilePath>
             </File>
             <File>
-              <FileName>LCD_Functions.c</FileName>
+              <FileName>Usart.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\LCD_Functions.c</FilePath>
+              <FilePath>.\Usart.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -1743,14 +1743,14 @@
               <FilePath>.\IRQ.c</FilePath>
             </File>
             <File>
-              <FileName>LED_Functions.c</FileName>
+              <FileName>system_stm32f10x.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\LED_Functions.c</FilePath>
+              <FilePath>.\system_stm32f10x.c</FilePath>
             </File>
             <File>
-              <FileName>LCD_Functions.c</FileName>
+              <FileName>Usart.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\LCD_Functions.c</FilePath>
+              <FilePath>.\Usart.c</FilePath>
             </File>
           </Files>
         </Group>

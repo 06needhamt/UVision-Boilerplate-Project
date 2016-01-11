@@ -8,5 +8,3 @@
 .\flash\boilerplate.o: C:\Keil\ARM\CMSIS\Include\core_cmFunc.h
 .\flash\boilerplate.o: C:\Keil\ARM\Inc\ST\STM32F10x\system_stm32f10x.h
 .\flash\boilerplate.o: GLCD.h
-.\flash\boilerplate.o: LED_Functions.h
-.\flash\boilerplate.o: LCD_Functions.h

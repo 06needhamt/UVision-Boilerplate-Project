@@ -3,132 +3,1175 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Project:</h2>
-C:\GitHub\Boiler Plate\BoilerPlate.uvproj
-Project File Date:  12/09/2015
+D:\GitHub\UVision-Boilerplate-Project\Boiler Plate\BoilerPlate.uvproj
+Project File Date:  01/11/2016
 
 <h2>Output:</h2>
-Clean started: Project: 'BoilerPlate'
-   deleting intermediate output files for target 'Simulator'
-   deleting intermediate output files for target 'MCBSTM32E Flash'
-   deleting intermediate output files for target 'MCBSTM32E RAM'
-   deleting intermediate output files for target 'MCBSTM32E Trace'
-Rebuild target 'MCBSTM32E Flash'
-assembling startup_stm32f10x_hd.s...
-compiling system_stm32f10x.c...
-compiling BoilerPlate.c...
-BoilerPlate.c(1): error:  #169: expected a declaration
-C:\Keil\ARM\ARMCC\bin\..\include\stdio.h(315): error:  #20: identifier "size_t" is undefined
-C:\Keil\ARM\ARMCC\bin\..\include\stdio.h(398): error:  #20: identifier "size_t" is undefined
-C:\Keil\ARM\ARMCC\bin\..\include\stdio.h(419): error:  #20: identifier "size_t" is undefined
-C:\Keil\ARM\ARMCC\bin\..\include\stdio.h(552): error:  #20: identifier "size_t" is undefined
-C:\Keil\ARM\ARMCC\bin\..\include\stdio.h(578): error:  #20: identifier "size_t" is undefined
-C:\Keil\ARM\ARMCC\bin\..\include\stdio.h(714): error:  #20: identifier "size_t" is undefined
-C:\Keil\ARM\ARMCC\bin\..\include\stdio.h(715): error:  #20: identifier "size_t" is undefined
-C:\Keil\ARM\ARMCC\bin\..\include\stdio.h(715): error:  #20: identifier "size_t" is undefined
-C:\Keil\ARM\ARMCC\bin\..\include\stdio.h(730): error:  #20: identifier "size_t" is undefined
-C:\Keil\ARM\ARMCC\bin\..\include\stdio.h(731): error:  #20: identifier "size_t" is undefined
-C:\Keil\ARM\ARMCC\bin\..\include\stdio.h(746): error:  #20: identifier "size_t" is undefined
-C:\Keil\ARM\ARMCC\bin\..\include\stdio.h(747): error:  #20: identifier "size_t" is undefined
-C:\Keil\ARM\ARMCC\bin\..\include\stdio.h(747): error:  #20: identifier "size_t" is undefined
-compiling GLCD_16bitIF_STM32.c...
-compiling IRQ.c...
-".\Flash\Blinky.axf" - 14 Errors, 0 Warning(s).
-Target not created
-Clean started: Project: 'BoilerPlate'
-   deleting intermediate output files for target 'Simulator'
-   deleting intermediate output files for target 'MCBSTM32E Flash'
-   deleting intermediate output files for target 'MCBSTM32E RAM'
-   deleting intermediate output files for target 'MCBSTM32E Trace'
 Rebuild target 'MCBSTM32E Flash'
 assembling startup_stm32f10x_hd.s...
 compiling system_stm32f10x.c...
 compiling BoilerPlate.c...
 compiling GLCD_16bitIF_STM32.c...
 compiling IRQ.c...
+compiling LED_Functions.c...
+compiling LCD_Functions.c...
 linking...
-Program Size: Code=4562 RO-data=6610 RW-data=40 ZI-data=1024  
+Program Size: Code=4558 RO-data=6610 RW-data=40 ZI-data=1024  
 ".\Flash\Blinky.axf" - 0 Errors, 0 Warning(s).
-Load "C:\\GitHub\\Boiler Plate\\Flash\\Blinky.axf" 
+Rebuild target 'MCBSTM32E Flash'
+assembling startup_stm32f10x_hd.s...
+compiling system_stm32f10x.c...
+compiling BoilerPlate.c...
+compiling GLCD_16bitIF_STM32.c...
+compiling IRQ.c...
+compiling LED_Functions.c...
+compiling LCD_Functions.c...
+compiling stm32f10x_adc.c...
+stm32f10x_adc.c(188): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_adc.c(229): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_adc.c(308): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_adc.c(333): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_adc.c(363): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_adc.c(388): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_adc.c(402): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_adc.c(426): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_adc.c(440): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_adc.c(466): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_adc.c(491): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_adc.c(520): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_adc.c(545): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_adc.c(600): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_adc.c(695): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_adc.c(717): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_adc.c(743): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_adc.c(769): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_adc.c(809): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_adc.c(833): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_adc.c(858): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_adc.c(883): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_adc.c(940): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_adc.c(1004): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_adc.c(1036): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_adc.c(1063): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_adc.c(1092): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_adc.c(1117): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_adc.c(1155): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_adc.c(1176): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_adc.c(1205): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_adc.c(1237): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_adc.c(1258): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_adc.c(1293): warning:  #223-D: function "assert_param" declared implicitly
+compiling stm32f10x_bkp.c...
+stm32f10x_bkp.c(143): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_bkp.c(156): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_bkp.c(169): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_bkp.c(190): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_bkp.c(211): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_bkp.c(233): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_bkp.c(252): warning:  #223-D: function "assert_param" declared implicitly
+compiling stm32f10x_can.c...
+stm32f10x_can.c(131): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_can.c(165): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_can.c(302): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_can.c(437): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_can.c(460): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_can.c(490): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_can.c(525): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_can.c(600): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_can.c(652): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_can.c(680): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_can.c(729): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_can.c(753): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_can.c(788): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_can.c(867): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_can.c(894): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_can.c(933): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_can.c(957): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_can.c(977): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_can.c(1012): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_can.c(1054): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_can.c(1153): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_can.c(1213): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_can.c(1315): warning:  #223-D: function "assert_param" declared implicitly
+compiling stm32f10x_cec.c...
+stm32f10x_cec.c(146): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_cec.c(173): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_cec.c(195): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_cec.c(208): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_cec.c(222): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_cec.c(271): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_cec.c(303): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_cec.c(360): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_cec.c(384): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_cec.c(419): warning:  #223-D: function "assert_param" declared implicitly
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+stm32f10x_dac.c(127): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_dac.c(182): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_dac.c(242): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_dac.c(269): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_dac.c(293): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_dac.c(323): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_dac.c(353): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_dac.c(378): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_dac.c(407): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_dac.c(441): warning:  #223-D: function "assert_param" declared implicitly
+compiling stm32f10x_dbgmcu.c...
+stm32f10x_dbgmcu.c(143): warning:  #223-D: function "assert_param" declared implicitly
+compiling stm32f10x_dma.c...
+stm32f10x_dma.c(117): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_dma.c(213): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_dma.c(303): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_dma.c(335): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_dma.c(362): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_dma.c(380): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_dma.c(445): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_dma.c(532): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_dma.c(607): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_dma.c(693): warning:  #223-D: function "assert_param" declared implicitly
+compiling stm32f10x_exti.c...
+stm32f10x_exti.c(112): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_exti.c(180): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_exti.c(196): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_exti.c(218): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_exti.c(235): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_exti.c(258): warning:  #223-D: function "assert_param" declared implicitly
+compiling stm32f10x_flash.c...
+stm32f10x_flash.c(266): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_flash.c(291): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_flash.c(310): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_flash.c(430): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_flash.c(694): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_flash.c(869): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_flash.c(940): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_flash.c(989): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_flash.c(1060): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_flash.c(1130): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_flash.c(1332): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_flash.c(1409): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_flash.c(1469): warning:  #223-D: function "assert_param" declared implicitly
+compiling stm32f10x_fsmc.c...
+stm32f10x_fsmc.c(111): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_fsmc.c(138): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_fsmc.c(185): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_fsmc.c(273): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_fsmc.c(337): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_fsmc.c(483): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_fsmc.c(509): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_fsmc.c(546): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_fsmc.c(572): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_fsmc.c(645): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_fsmc.c(709): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_fsmc.c(756): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_fsmc.c(794): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_fsmc.c(842): warning:  #223-D: function "assert_param" declared implicitly
+compiling stm32f10x_gpio.c...
+stm32f10x_gpio.c(117): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_gpio.c(184): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_gpio.c(292): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_gpio.c(314): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_gpio.c(330): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_gpio.c(352): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_gpio.c(367): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_gpio.c(383): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_gpio.c(403): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_gpio.c(426): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_gpio.c(443): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_gpio.c(472): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_gpio.c(492): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_gpio.c(560): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_gpio.c(619): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_gpio.c(638): warning:  #223-D: function "assert_param" declared implicitly
+compiling stm32f10x_i2c.c...
+stm32f10x_i2c.c(171): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_i2c.c(204): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_i2c.c(331): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_i2c.c(355): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_i2c.c(379): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_i2c.c(403): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_i2c.c(427): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_i2c.c(451): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_i2c.c(476): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_i2c.c(501): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_i2c.c(525): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_i2c.c(554): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_i2c.c(579): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_i2c.c(592): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_i2c.c(610): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_i2c.c(647): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_i2c.c(667): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_i2c.c(705): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_i2c.c(733): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_i2c.c(757): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_i2c.c(788): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_i2c.c(812): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_i2c.c(834): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_i2c.c(849): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_i2c.c(873): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_i2c.c(899): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_i2c.c(1043): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_i2c.c(1090): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_i2c.c(1145): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_i2c.c(1222): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_i2c.c(1258): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_i2c.c(1317): warning:  #223-D: function "assert_param" declared implicitly
+compiling stm32f10x_iwdg.c...
+stm32f10x_iwdg.c(101): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_iwdg.c(121): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_iwdg.c(134): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_iwdg.c(171): warning:  #223-D: function "assert_param" declared implicitly
+compiling stm32f10x_nvic.c...
+stm32f10x_nvic.c(5): error:  #169: expected a declaration
+stm32f10x_nvic.c(8): error:  #26: too many characters in character constant
+stm32f10x_nvic.c(14): error:  #7: unrecognized token
+stm32f10x_nvic.c(94): error:  #8: missing closing quote
+stm32f10x_nvic.c(212): error:  #8: missing closing quote
+stm32f10x_nvic.c(250): error:  #8: missing closing quote
+stm32f10x_nvic.c(279): error:  #7: unrecognized token
+stm32f10x_nvic.c(325): error:  #8: missing closing quote
+stm32f10x_nvic.c(337): error:  #8: missing closing quote
+stm32f10x_nvic.c(539): error:  #8: missing closing quote
+stm32f10x_nvic.c(576): error:  #8: missing closing quote
+stm32f10x_nvic.c(581): error:  #8: missing closing quote
+stm32f10x_nvic.c(682): error:  #10: "#" not expected here
+stm32f10x_nvic.c(682): warning:  #12-D: parsing restarts here after previous syntax error
+stm32f10x_nvic.c(682): error:  #169: expected a declaration
+stm32f10x_nvic.c(682): error:  #169: expected a declaration
+stm32f10x_nvic.c(699): error:  #10: "#" not expected here
+stm32f10x_nvic.c(789): warning:  #12-D: parsing restarts here after previous syntax error
+stm32f10x_nvic.c(789): error:  #29: expected an expression
+stm32f10x_nvic.c(789): error:  #57: this operator is not allowed in a constant expression
+stm32f10x_nvic.c(789): error:  #31: expression must have integral type
+stm32f10x_nvic.c(789): error:  #29: expected an expression
+stm32f10x_nvic.c(789): error:  #169: expected a declaration
+stm32f10x_nvic.c(882): warning:  #12-D: parsing restarts here after previous syntax error
+stm32f10x_nvic.c(882): error:  #77-D: this declaration has no storage class or type specifier
+stm32f10x_nvic.c(882): error:  #169: expected a declaration
+stm32f10x_nvic.c(886): warning:  #12-D: parsing restarts here after previous syntax error
+stm32f10x_nvic.c(886): error:  #77-D: this declaration has no storage class or type specifier
+stm32f10x_nvic.c(886): error:  #169: expected a declaration
+stm32f10x_nvic.c(906): warning:  #12-D: parsing restarts here after previous syntax error
+stm32f10x_nvic.c(906): error:  #77-D: this declaration has no storage class or type specifier
+stm32f10x_nvic.c(906): error:  #169: expected a declaration
+stm32f10x_nvic.c(910): warning:  #12-D: parsing restarts here after previous syntax error
+stm32f10x_nvic.c(910): error:  #77-D: this declaration has no storage class or type specifier
+stm32f10x_nvic.c(910): error:  #169: expected a declaration
+stm32f10x_nvic.c(914): warning:  #12-D: parsing restarts here after previous syntax error
+stm32f10x_nvic.c(914): error:  #77-D: this declaration has no storage class or type specifier
+compiling stm32f10x_pwr.c...
+stm32f10x_pwr.c(133): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_pwr.c(146): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_pwr.c(168): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_pwr.c(187): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_pwr.c(207): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_pwr.c(271): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_pwr.c(296): warning:  #223-D: function "assert_param" declared implicitly
+compiling stm32f10x_rcc.c...
+stm32f10x_rcc.c(279): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_rcc.c(344): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_rcc.c(363): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_rcc.c(389): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_rcc.c(410): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_rcc.c(574): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_rcc.c(618): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_rcc.c(644): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_rcc.c(670): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_rcc.c(709): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_rcc.c(737): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_rcc.c(776): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_rcc.c(838): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_rcc.c(871): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_rcc.c(888): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_rcc.c(902): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_rcc.c(1073): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_rcc.c(1104): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_rcc.c(1135): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_rcc.c(1194): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_rcc.c(1225): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_rcc.c(1246): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_rcc.c(1259): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_rcc.c(1291): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_rcc.c(1338): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_rcc.c(1412): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_rcc.c(1457): warning:  #223-D: function "assert_param" declared implicitly
+compiling stm32f10x_rtc.c...
+stm32f10x_rtc.c(99): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_rtc.c(182): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_rtc.c(268): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_rtc.c(295): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_rtc.c(314): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_rtc.c(340): warning:  #223-D: function "assert_param" declared implicitly
+compiling stm32f10x_sdio.c...
+stm32f10x_sdio.c(192): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_sdio.c(244): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_sdio.c(260): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_sdio.c(315): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_sdio.c(339): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_sdio.c(356): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_sdio.c(422): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_sdio.c(441): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_sdio.c(537): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_sdio.c(551): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_sdio.c(567): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_sdio.c(581): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_sdio.c(595): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_sdio.c(609): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_sdio.c(622): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_sdio.c(635): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_sdio.c(676): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_sdio.c(712): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_sdio.c(753): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_sdio.c(787): warning:  #223-D: function "assert_param" declared implicitly
+compiling stm32f10x_spi.c...
+stm32f10x_spi.h(58): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_spi.h(61): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_spi.h(64): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_spi.h(67): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_spi.h(70): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_spi.h(73): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_spi.h(77): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_spi.h(83): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_spi.h(86): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_spi.h(96): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_spi.h(99): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_spi.h(102): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_spi.h(105): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_spi.h(108): error:  #20: identifier "uint32_t" is undefined
+stm32f10x_spi.h(111): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_spi.h(452): error:  #20: identifier "SPI_TypeDef" is undefined
+stm32f10x_spi.h(453): error:  #20: identifier "SPI_TypeDef" is undefined
+stm32f10x_spi.h(454): error:  #20: identifier "SPI_TypeDef" is undefined
+stm32f10x_spi.h(457): error:  #20: identifier "SPI_TypeDef" is undefined
+stm32f10x_spi.h(457): error:  #20: identifier "FunctionalState" is undefined
+stm32f10x_spi.h(458): error:  #20: identifier "SPI_TypeDef" is undefined
+stm32f10x_spi.h(458): error:  #20: identifier "FunctionalState" is undefined
+stm32f10x_spi.h(459): error:  #20: identifier "SPI_TypeDef" is undefined
+stm32f10x_spi.h(459): error:  #20: identifier "uint8_t" is undefined
+stm32f10x_spi.h(459): error:  #20: identifier "FunctionalState" is undefined
+stm32f10x_spi.h(460): error:  #20: identifier "SPI_TypeDef" is undefined
+stm32f10x_spi.h(460): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_spi.h(460): error:  #20: identifier "FunctionalState" is undefined
+stm32f10x_spi.h(461): error:  #20: identifier "SPI_TypeDef" is undefined
+stm32f10x_spi.h(461): error:  #20: identifier "uint16_t" is undefined
+compiling stm32f10x_tim.c...
+stm32f10x_tim.h(59): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_tim.h(62): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_tim.h(65): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_tim.h(69): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_tim.h(72): error:  #20: identifier "uint8_t" is undefined
+stm32f10x_tim.h(88): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_tim.h(91): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_tim.h(94): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_tim.h(98): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_tim.h(101): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_tim.h(104): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_tim.h(108): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_tim.h(112): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_tim.h(124): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_tim.h(127): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_tim.h(130): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_tim.h(133): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_tim.h(136): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_tim.h(148): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_tim.h(151): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_tim.h(154): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_tim.h(157): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_tim.h(161): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_tim.h(164): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_tim.h(167): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_tim.h(1060): error:  #20: identifier "TIM_TypeDef" is undefined
+stm32f10x_tim.h(1061): error:  #20: identifier "TIM_TypeDef" is undefined
+stm32f10x_tim.h(1062): error:  #20: identifier "TIM_TypeDef" is undefined
+stm32f10x_tim.h(1063): error:  #20: identifier "TIM_TypeDef" is undefined
+stm32f10x_tim.h(1064): error:  #20: identifier "TIM_TypeDef" is undefined
+compiling stm32f10x_usart.c...
+stm32f10x_usart.h(58): error:  #20: identifier "uint32_t" is undefined
+stm32f10x_usart.h(63): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_usart.h(66): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_usart.h(69): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_usart.h(76): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_usart.h(79): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_usart.h(91): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_usart.h(94): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_usart.h(97): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_usart.h(100): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_usart.h(382): error:  #20: identifier "USART_TypeDef" is undefined
+stm32f10x_usart.h(383): error:  #20: identifier "USART_TypeDef" is undefined
+stm32f10x_usart.h(385): error:  #20: identifier "USART_TypeDef" is undefined
+stm32f10x_usart.h(387): error:  #20: identifier "USART_TypeDef" is undefined
+stm32f10x_usart.h(387): error:  #20: identifier "FunctionalState" is undefined
+stm32f10x_usart.h(388): error:  #20: identifier "USART_TypeDef" is undefined
+stm32f10x_usart.h(388): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_usart.h(388): error:  #20: identifier "FunctionalState" is undefined
+stm32f10x_usart.h(389): error:  #20: identifier "USART_TypeDef" is undefined
+stm32f10x_usart.h(389): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_usart.h(389): error:  #20: identifier "FunctionalState" is undefined
+stm32f10x_usart.h(390): error:  #20: identifier "USART_TypeDef" is undefined
+stm32f10x_usart.h(390): error:  #20: identifier "uint8_t" is undefined
+stm32f10x_usart.h(391): error:  #20: identifier "USART_TypeDef" is undefined
+stm32f10x_usart.h(391): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_usart.h(392): error:  #20: identifier "USART_TypeDef" is undefined
+stm32f10x_usart.h(392): error:  #20: identifier "FunctionalState" is undefined
+stm32f10x_usart.h(393): error:  #20: identifier "USART_TypeDef" is undefined
+stm32f10x_usart.h(393): error:  #20: identifier "uint16_t" is undefined
+stm32f10x_usart.h(394): error:  #20: identifier "USART_TypeDef" is undefined
+compiling stm32f10x_wwdg.c...
+stm32f10x_wwdg.h(95): error:  #20: identifier "uint32_t" is undefined
+stm32f10x_wwdg.h(96): error:  #20: identifier "uint8_t" is undefined
+stm32f10x_wwdg.h(98): error:  #20: identifier "uint8_t" is undefined
+stm32f10x_wwdg.h(99): error:  #20: identifier "uint8_t" is undefined
+stm32f10x_wwdg.h(100): error:  #20: identifier "FlagStatus" is undefined
+stm32f10x_wwdg.c(128): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_wwdg.c(148): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_wwdg.c(179): warning:  #223-D: function "assert_param" declared implicitly
+stm32f10x_wwdg.c(194): warning:  #223-D: function "assert_param" declared implicitly
+compiling system_stm32f10x.c...
+compiling Usart.c...
+stm32f10x_nvic.h(255): warning:  #1-D: last line of file ends without a newline
+stm32f10x_lib.h(91): error:  #5: cannot open source input file "stm32f10x_systick.h": No such file or directory
+".\Flash\Blinky.axf" - 126 Errors, 252 Warning(s).
+Target not created
+Rebuild target 'MCBSTM32E Flash'
+assembling startup_stm32f10x_hd.s...
+compiling system_stm32f10x.c...
+compiling BoilerPlate.c...
+compiling GLCD_16bitIF_STM32.c...
+compiling IRQ.c...
+compiling LED_Functions.c...
+compiling system_stm32f10x.c...
+compiling Usart.c...
+stm32f10x_nvic.h(255): warning:  #1-D: last line of file ends without a newline
+stm32f10x_lib.h(91): error:  #5: cannot open source input file "stm32f10x_systick.h": No such file or directory
+".\Flash\Blinky.axf" - 1 Errors, 1 Warning(s).
+Target not created
+Rebuild target 'MCBSTM32E Flash'
+assembling startup_stm32f10x_hd.s...
+compiling system_stm32f10x.c...
+compiling BoilerPlate.c...
+compiling GLCD_16bitIF_STM32.c...
+compiling IRQ.c...
+compiling LED_Functions.c...
+compiling system_stm32f10x.c...
+compiling Usart.c...
+stm32f10x_nvic.h(255): warning:  #1-D: last line of file ends without a newline
+stm32f10x_systick.h(5): error:  #169: expected a declaration
+stm32f10x_systick.h(8): error:  #26: too many characters in character constant
+stm32f10x_systick.h(14): error:  #7: unrecognized token
+stm32f10x_systick.h(94): error:  #8: missing closing quote
+stm32f10x_systick.h(212): error:  #8: missing closing quote
+stm32f10x_systick.h(250): error:  #8: missing closing quote
+stm32f10x_systick.h(279): error:  #7: unrecognized token
+stm32f10x_systick.h(325): error:  #8: missing closing quote
+stm32f10x_systick.h(337): error:  #8: missing closing quote
+stm32f10x_systick.h(578): error:  #8: missing closing quote
+stm32f10x_systick.h(583): error:  #8: missing closing quote
+stm32f10x_systick.h(672): error:  #10: "#" not expected here
+stm32f10x_systick.h(676): error:  #10: "#" not expected here
+stm32f10x_systick.h(689): error:  #10: "#" not expected here
+stm32f10x_systick.h(689): warning:  #12-D: parsing restarts here after previous syntax error
+stm32f10x_systick.h(689): error:  #169: expected a declaration
+stm32f10x_systick.h(689): error:  #169: expected a declaration
+stm32f10x_systick.h(710): error:  #10: "#" not expected here
+stm32f10x_systick.h(714): error:  #10: "#" not expected here
+stm32f10x_systick.h(723): error:  #10: "#" not expected here
+stm32f10x_systick.h(723): error:  #7: unrecognized token
+stm32f10x_systick.h(740): error:  #10: "#" not expected here
+stm32f10x_systick.h(744): error:  #10: "#" not expected here
+stm32f10x_systick.h(748): error:  #10: "#" not expected here
+stm32f10x_systick.h(757): error:  #10: "#" not expected here
+stm32f10x_systick.h(757): error:  #7: unrecognized token
+stm32f10x_systick.h(761): error:  #7: unrecognized token
+stm32f10x_systick.h(778): error:  #10: "#" not expected here
+stm32f10x_systick.h(782): error:  #10: "#" not expected here
+stm32f10x_systick.h(786): error:  #10: "#" not expected here
+stm32f10x_systick.h(795): error:  #10: "#" not expected here
+".\Flash\Blinky.axf" - 30 Errors, 2 Warning(s).
+Target not created
+Rebuild target 'MCBSTM32E Flash'
+assembling startup_stm32f10x_hd.s...
+compiling system_stm32f10x.c...
+compiling BoilerPlate.c...
+compiling GLCD_16bitIF_STM32.c...
+compiling IRQ.c...
+compiling LED_Functions.c...
+compiling system_stm32f10x.c...
+compiling Usart.c...
+stm32f10x_nvic.h(255): warning:  #1-D: last line of file ends without a newline
+stm32f10x_lib.h(95): error:  #5: cannot open source input file "stm32f10x_tim1.h": No such file or directory
+".\Flash\Blinky.axf" - 1 Errors, 1 Warning(s).
+Target not created
+Rebuild target 'MCBSTM32E Flash'
+assembling startup_stm32f10x_hd.s...
+compiling system_stm32f10x.c...
+compiling BoilerPlate.c...
+compiling GLCD_16bitIF_STM32.c...
+compiling IRQ.c...
+compiling LED_Functions.c...
+compiling system_stm32f10x.c...
+compiling Usart.c...
+stm32f10x_nvic.h(255): warning:  #1-D: last line of file ends without a newline
+stm32f10x_lib.h(115): warning:  #1-D: last line of file ends without a newline
+stm32f10x_lib.h(22): error:  #37: the #endif for this directive is missing
+stm32f10x_lib.h(19): error:  #37: the #endif for this directive is missing
+STM32_Reg.h(38): warning:  #47-D: incompatible redefinition of macro "PWR_CR_DBP" (declared at line 1516 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(45): warning:  #47-D: incompatible redefinition of macro "RCC_CR_HSION" (declared at line 1681 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(46): warning:  #47-D: incompatible redefinition of macro "RCC_CR_HSIRDY" (declared at line 1682 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(47): warning:  #47-D: incompatible redefinition of macro "RCC_CR_HSEON" (declared at line 1685 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(48): warning:  #47-D: incompatible redefinition of macro "RCC_CR_HSERDY" (declared at line 1686 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(49): warning:  #47-D: incompatible redefinition of macro "RCC_CR_PLLON" (declared at line 1689 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(50): warning:  #47-D: incompatible redefinition of macro "RCC_CR_PLLRDY" (declared at line 1690 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(53): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_SW" (declared at line 1701 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(54): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_SWS" (declared at line 1710 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(55): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_HPRE" (declared at line 1719 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(58): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_PLLSRC" (declared at line 1769 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(59): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_PLLXTPRE" (declared at line 1771 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(60): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_PLLMULL" (declared at line 1774 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(61): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_USBPRE" (declared at line 1869 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(62): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_MCO" (declared at line 1872 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(65): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_TIM2EN" (declared at line 2089 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(66): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_TIM3EN" (declared at line 2090 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(67): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_TIM4EN" (declared at line 2103 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(68): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_USART2EN" (declared at line 2092 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(69): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_USART3EN" (declared at line 2105 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(71): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_BKPEN" (declared at line 2099 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(72): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_PWREN" (declared at line 2100 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(75): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_AFIOEN" (declared at line 2045 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(76): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPAEN" (declared at line 2046 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(77): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPBEN" (declared at line 2047 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(78): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPCEN" (declared at line 2048 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(79): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPDEN" (declared at line 2049 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(80): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPEEN" (declared at line 2067 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(81): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPFEN" (declared at line 2071 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(82): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPGEN" (declared at line 2072 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(83): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_ADC1EN" (declared at line 2050 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(84): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_ADC2EN" (declared at line 2053 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(85): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_TIM1EN" (declared at line 2056 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(86): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_SPI1EN" (declared at line 2057 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(87): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_USART1EN" (declared at line 2058 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(90): warning:  #47-D: incompatible redefinition of macro "RCC_BDCR_LSEON" (declared at line 2151 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(91): warning:  #47-D: incompatible redefinition of macro "RCC_BDCR_LSERDY" (declared at line 2152 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(92): warning:  #47-D: incompatible redefinition of macro "RCC_BDCR_RTCSEL" (declared at line 2155 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(93): warning:  #47-D: incompatible redefinition of macro "RCC_BDCR_RTCEN" (declared at line 2165 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(96): warning:  #47-D: incompatible redefinition of macro "RCC_CSR_LSION" (declared at line 2169 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(97): warning:  #47-D: incompatible redefinition of macro "RCC_CSR_LSIRDY" (declared at line 2170 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(103): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_SECF" (declared at line 4488 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(104): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_ALRF" (declared at line 4489 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(105): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_OWF" (declared at line 4490 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(106): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_RSF" (declared at line 4491 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(107): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_CNF" (declared at line 4492 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(108): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_RTOFF" (declared at line 4493 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(125): warning:  #47-D: incompatible redefinition of macro "CAN_MCR_INRQ" (declared at line 6219 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(126): warning:  #47-D: incompatible redefinition of macro "CAN_MCR_NART" (declared at line 6223 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(129): warning:  #47-D: incompatible redefinition of macro "CAN_FMR_FINIT" (declared at line 6438 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(132): warning:  #47-D: incompatible redefinition of macro "CAN_TSR_RQCP0" (declared at line 6241 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(133): warning:  #47-D: incompatible redefinition of macro "CAN_TSR_TME0" (declared at line 6259 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(136): warning:  #47-D: incompatible redefinition of macro "CAN_RF0R_FMP0" (declared at line 6269 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(137): warning:  #47-D: incompatible redefinition of macro "CAN_RF0R_RFOM0" (declared at line 6272 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(140): warning:  #47-D: incompatible redefinition of macro "CAN_IER_TMEIE" (declared at line 6281 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(141): warning:  #47-D: incompatible redefinition of macro "CAN_IER_FMPIE0" (declared at line 6282 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(144): warning:  #47-D: incompatible redefinition of macro "CAN_BTR_SILM" (declared at line 6315 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(145): warning:  #47-D: incompatible redefinition of macro "CAN_BTR_LBKM" (declared at line 6314 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(157): warning:  #47-D: incompatible redefinition of macro "ADC_SR_EOC" (declared at line 3704 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(160): warning:  #47-D: incompatible redefinition of macro "ADC_DR_DATA" (declared at line 4043 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(166): warning:  #47-D: incompatible redefinition of macro "USART_CR1_RE" (declared at line 7667 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(167): warning:  #47-D: incompatible redefinition of macro "USART_CR1_TE" (declared at line 7668 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(168): warning:  #47-D: incompatible redefinition of macro "USART_CR1_UE" (declared at line 7678 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+".\Flash\Blinky.axf" - 2 Errors, 65 Warning(s).
+Target not created
+Rebuild target 'MCBSTM32E Flash'
+assembling startup_stm32f10x_hd.s...
+compiling system_stm32f10x.c...
+compiling BoilerPlate.c...
+compiling GLCD_16bitIF_STM32.c...
+compiling IRQ.c...
+compiling LED_Functions.c...
+compiling system_stm32f10x.c...
+compiling Usart.c...
+stm32f10x_nvic.h(255): warning:  #1-D: last line of file ends without a newline
+stm32f10x_lib.h(116): warning:  #1-D: last line of file ends without a newline
+STM32_Reg.h(38): warning:  #47-D: incompatible redefinition of macro "PWR_CR_DBP" (declared at line 1516 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(45): warning:  #47-D: incompatible redefinition of macro "RCC_CR_HSION" (declared at line 1681 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(46): warning:  #47-D: incompatible redefinition of macro "RCC_CR_HSIRDY" (declared at line 1682 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(47): warning:  #47-D: incompatible redefinition of macro "RCC_CR_HSEON" (declared at line 1685 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(48): warning:  #47-D: incompatible redefinition of macro "RCC_CR_HSERDY" (declared at line 1686 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(49): warning:  #47-D: incompatible redefinition of macro "RCC_CR_PLLON" (declared at line 1689 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(50): warning:  #47-D: incompatible redefinition of macro "RCC_CR_PLLRDY" (declared at line 1690 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(53): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_SW" (declared at line 1701 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(54): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_SWS" (declared at line 1710 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(55): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_HPRE" (declared at line 1719 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(58): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_PLLSRC" (declared at line 1769 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(59): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_PLLXTPRE" (declared at line 1771 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(60): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_PLLMULL" (declared at line 1774 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(61): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_USBPRE" (declared at line 1869 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(62): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_MCO" (declared at line 1872 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(65): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_TIM2EN" (declared at line 2089 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(66): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_TIM3EN" (declared at line 2090 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(67): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_TIM4EN" (declared at line 2103 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(68): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_USART2EN" (declared at line 2092 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(69): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_USART3EN" (declared at line 2105 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(71): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_BKPEN" (declared at line 2099 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(72): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_PWREN" (declared at line 2100 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(75): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_AFIOEN" (declared at line 2045 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(76): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPAEN" (declared at line 2046 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(77): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPBEN" (declared at line 2047 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(78): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPCEN" (declared at line 2048 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(79): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPDEN" (declared at line 2049 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(80): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPEEN" (declared at line 2067 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(81): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPFEN" (declared at line 2071 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(82): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPGEN" (declared at line 2072 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(83): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_ADC1EN" (declared at line 2050 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(84): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_ADC2EN" (declared at line 2053 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(85): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_TIM1EN" (declared at line 2056 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(86): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_SPI1EN" (declared at line 2057 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(87): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_USART1EN" (declared at line 2058 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(90): warning:  #47-D: incompatible redefinition of macro "RCC_BDCR_LSEON" (declared at line 2151 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(91): warning:  #47-D: incompatible redefinition of macro "RCC_BDCR_LSERDY" (declared at line 2152 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(92): warning:  #47-D: incompatible redefinition of macro "RCC_BDCR_RTCSEL" (declared at line 2155 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(93): warning:  #47-D: incompatible redefinition of macro "RCC_BDCR_RTCEN" (declared at line 2165 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(96): warning:  #47-D: incompatible redefinition of macro "RCC_CSR_LSION" (declared at line 2169 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(97): warning:  #47-D: incompatible redefinition of macro "RCC_CSR_LSIRDY" (declared at line 2170 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(103): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_SECF" (declared at line 4488 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(104): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_ALRF" (declared at line 4489 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(105): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_OWF" (declared at line 4490 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(106): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_RSF" (declared at line 4491 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(107): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_CNF" (declared at line 4492 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(108): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_RTOFF" (declared at line 4493 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(125): warning:  #47-D: incompatible redefinition of macro "CAN_MCR_INRQ" (declared at line 6219 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(126): warning:  #47-D: incompatible redefinition of macro "CAN_MCR_NART" (declared at line 6223 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(129): warning:  #47-D: incompatible redefinition of macro "CAN_FMR_FINIT" (declared at line 6438 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(132): warning:  #47-D: incompatible redefinition of macro "CAN_TSR_RQCP0" (declared at line 6241 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(133): warning:  #47-D: incompatible redefinition of macro "CAN_TSR_TME0" (declared at line 6259 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(136): warning:  #47-D: incompatible redefinition of macro "CAN_RF0R_FMP0" (declared at line 6269 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(137): warning:  #47-D: incompatible redefinition of macro "CAN_RF0R_RFOM0" (declared at line 6272 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(140): warning:  #47-D: incompatible redefinition of macro "CAN_IER_TMEIE" (declared at line 6281 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(141): warning:  #47-D: incompatible redefinition of macro "CAN_IER_FMPIE0" (declared at line 6282 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(144): warning:  #47-D: incompatible redefinition of macro "CAN_BTR_SILM" (declared at line 6315 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(145): warning:  #47-D: incompatible redefinition of macro "CAN_BTR_LBKM" (declared at line 6314 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(157): warning:  #47-D: incompatible redefinition of macro "ADC_SR_EOC" (declared at line 3704 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(160): warning:  #47-D: incompatible redefinition of macro "ADC_DR_DATA" (declared at line 4043 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(166): warning:  #47-D: incompatible redefinition of macro "USART_CR1_RE" (declared at line 7667 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(167): warning:  #47-D: incompatible redefinition of macro "USART_CR1_TE" (declared at line 7668 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(168): warning:  #47-D: incompatible redefinition of macro "USART_CR1_UE" (declared at line 7678 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+linking...
+.\Flash\Blinky.axf: Warning: L6304W: Duplicate input file .\flash\system_stm32f10x.o ignored.
+.\Flash\Blinky.axf: Error: L6218E: Undefined symbol displayTestMessage (referred from boilerplate.o).
+".\Flash\Blinky.axf" - 1 Errors, 66 Warning(s).
+Target not created
+Rebuild target 'MCBSTM32E Flash'
+assembling startup_stm32f10x_hd.s...
+compiling system_stm32f10x.c...
+compiling BoilerPlate.c...
+compiling GLCD_16bitIF_STM32.c...
+compiling IRQ.c...
+compiling LED_Functions.c...
+compiling system_stm32f10x.c...
+compiling Usart.c...
+stm32f10x_nvic.h(255): warning:  #1-D: last line of file ends without a newline
+stm32f10x_lib.h(116): warning:  #1-D: last line of file ends without a newline
+STM32_Reg.h(38): warning:  #47-D: incompatible redefinition of macro "PWR_CR_DBP" (declared at line 1516 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(45): warning:  #47-D: incompatible redefinition of macro "RCC_CR_HSION" (declared at line 1681 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(46): warning:  #47-D: incompatible redefinition of macro "RCC_CR_HSIRDY" (declared at line 1682 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(47): warning:  #47-D: incompatible redefinition of macro "RCC_CR_HSEON" (declared at line 1685 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(48): warning:  #47-D: incompatible redefinition of macro "RCC_CR_HSERDY" (declared at line 1686 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(49): warning:  #47-D: incompatible redefinition of macro "RCC_CR_PLLON" (declared at line 1689 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(50): warning:  #47-D: incompatible redefinition of macro "RCC_CR_PLLRDY" (declared at line 1690 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(53): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_SW" (declared at line 1701 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(54): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_SWS" (declared at line 1710 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(55): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_HPRE" (declared at line 1719 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(58): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_PLLSRC" (declared at line 1769 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(59): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_PLLXTPRE" (declared at line 1771 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(60): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_PLLMULL" (declared at line 1774 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(61): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_USBPRE" (declared at line 1869 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(62): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_MCO" (declared at line 1872 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(65): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_TIM2EN" (declared at line 2089 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(66): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_TIM3EN" (declared at line 2090 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(67): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_TIM4EN" (declared at line 2103 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(68): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_USART2EN" (declared at line 2092 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(69): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_USART3EN" (declared at line 2105 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(71): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_BKPEN" (declared at line 2099 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(72): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_PWREN" (declared at line 2100 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(75): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_AFIOEN" (declared at line 2045 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(76): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPAEN" (declared at line 2046 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(77): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPBEN" (declared at line 2047 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(78): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPCEN" (declared at line 2048 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(79): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPDEN" (declared at line 2049 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(80): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPEEN" (declared at line 2067 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(81): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPFEN" (declared at line 2071 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(82): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPGEN" (declared at line 2072 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(83): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_ADC1EN" (declared at line 2050 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(84): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_ADC2EN" (declared at line 2053 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(85): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_TIM1EN" (declared at line 2056 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(86): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_SPI1EN" (declared at line 2057 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(87): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_USART1EN" (declared at line 2058 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(90): warning:  #47-D: incompatible redefinition of macro "RCC_BDCR_LSEON" (declared at line 2151 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(91): warning:  #47-D: incompatible redefinition of macro "RCC_BDCR_LSERDY" (declared at line 2152 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(92): warning:  #47-D: incompatible redefinition of macro "RCC_BDCR_RTCSEL" (declared at line 2155 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(93): warning:  #47-D: incompatible redefinition of macro "RCC_BDCR_RTCEN" (declared at line 2165 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(96): warning:  #47-D: incompatible redefinition of macro "RCC_CSR_LSION" (declared at line 2169 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(97): warning:  #47-D: incompatible redefinition of macro "RCC_CSR_LSIRDY" (declared at line 2170 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(103): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_SECF" (declared at line 4488 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(104): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_ALRF" (declared at line 4489 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(105): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_OWF" (declared at line 4490 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(106): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_RSF" (declared at line 4491 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(107): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_CNF" (declared at line 4492 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(108): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_RTOFF" (declared at line 4493 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(125): warning:  #47-D: incompatible redefinition of macro "CAN_MCR_INRQ" (declared at line 6219 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(126): warning:  #47-D: incompatible redefinition of macro "CAN_MCR_NART" (declared at line 6223 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(129): warning:  #47-D: incompatible redefinition of macro "CAN_FMR_FINIT" (declared at line 6438 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(132): warning:  #47-D: incompatible redefinition of macro "CAN_TSR_RQCP0" (declared at line 6241 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(133): warning:  #47-D: incompatible redefinition of macro "CAN_TSR_TME0" (declared at line 6259 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(136): warning:  #47-D: incompatible redefinition of macro "CAN_RF0R_FMP0" (declared at line 6269 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(137): warning:  #47-D: incompatible redefinition of macro "CAN_RF0R_RFOM0" (declared at line 6272 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(140): warning:  #47-D: incompatible redefinition of macro "CAN_IER_TMEIE" (declared at line 6281 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(141): warning:  #47-D: incompatible redefinition of macro "CAN_IER_FMPIE0" (declared at line 6282 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(144): warning:  #47-D: incompatible redefinition of macro "CAN_BTR_SILM" (declared at line 6315 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(145): warning:  #47-D: incompatible redefinition of macro "CAN_BTR_LBKM" (declared at line 6314 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(157): warning:  #47-D: incompatible redefinition of macro "ADC_SR_EOC" (declared at line 3704 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(160): warning:  #47-D: incompatible redefinition of macro "ADC_DR_DATA" (declared at line 4043 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(166): warning:  #47-D: incompatible redefinition of macro "USART_CR1_RE" (declared at line 7667 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(167): warning:  #47-D: incompatible redefinition of macro "USART_CR1_TE" (declared at line 7668 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(168): warning:  #47-D: incompatible redefinition of macro "USART_CR1_UE" (declared at line 7678 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+linking...
+.\Flash\Blinky.axf: Warning: L6304W: Duplicate input file .\flash\system_stm32f10x.o ignored.
+Program Size: Code=4632 RO-data=6608 RW-data=48 ZI-data=1808  
+".\Flash\Blinky.axf" - 0 Errors, 66 Warning(s).
+Rebuild target 'MCBSTM32E Flash'
+assembling startup_stm32f10x_hd.s...
+compiling system_stm32f10x.c...
+compiling BoilerPlate.c...
+compiling GLCD_16bitIF_STM32.c...
+compiling IRQ.c...
+compiling LED_Functions.c...
+compiling system_stm32f10x.c...
+compiling Usart.c...
+stm32f10x_nvic.h(255): warning:  #1-D: last line of file ends without a newline
+stm32f10x_lib.h(116): warning:  #1-D: last line of file ends without a newline
+STM32_Reg.h(38): warning:  #47-D: incompatible redefinition of macro "PWR_CR_DBP" (declared at line 1516 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(45): warning:  #47-D: incompatible redefinition of macro "RCC_CR_HSION" (declared at line 1681 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(46): warning:  #47-D: incompatible redefinition of macro "RCC_CR_HSIRDY" (declared at line 1682 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(47): warning:  #47-D: incompatible redefinition of macro "RCC_CR_HSEON" (declared at line 1685 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(48): warning:  #47-D: incompatible redefinition of macro "RCC_CR_HSERDY" (declared at line 1686 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(49): warning:  #47-D: incompatible redefinition of macro "RCC_CR_PLLON" (declared at line 1689 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(50): warning:  #47-D: incompatible redefinition of macro "RCC_CR_PLLRDY" (declared at line 1690 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(53): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_SW" (declared at line 1701 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(54): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_SWS" (declared at line 1710 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(55): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_HPRE" (declared at line 1719 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(58): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_PLLSRC" (declared at line 1769 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(59): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_PLLXTPRE" (declared at line 1771 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(60): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_PLLMULL" (declared at line 1774 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(61): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_USBPRE" (declared at line 1869 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(62): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_MCO" (declared at line 1872 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(65): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_TIM2EN" (declared at line 2089 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(66): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_TIM3EN" (declared at line 2090 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(67): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_TIM4EN" (declared at line 2103 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(68): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_USART2EN" (declared at line 2092 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(69): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_USART3EN" (declared at line 2105 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(71): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_BKPEN" (declared at line 2099 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(72): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_PWREN" (declared at line 2100 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(75): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_AFIOEN" (declared at line 2045 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(76): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPAEN" (declared at line 2046 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(77): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPBEN" (declared at line 2047 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(78): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPCEN" (declared at line 2048 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(79): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPDEN" (declared at line 2049 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(80): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPEEN" (declared at line 2067 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(81): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPFEN" (declared at line 2071 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(82): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPGEN" (declared at line 2072 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(83): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_ADC1EN" (declared at line 2050 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(84): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_ADC2EN" (declared at line 2053 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(85): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_TIM1EN" (declared at line 2056 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(86): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_SPI1EN" (declared at line 2057 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(87): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_USART1EN" (declared at line 2058 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(90): warning:  #47-D: incompatible redefinition of macro "RCC_BDCR_LSEON" (declared at line 2151 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(91): warning:  #47-D: incompatible redefinition of macro "RCC_BDCR_LSERDY" (declared at line 2152 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(92): warning:  #47-D: incompatible redefinition of macro "RCC_BDCR_RTCSEL" (declared at line 2155 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(93): warning:  #47-D: incompatible redefinition of macro "RCC_BDCR_RTCEN" (declared at line 2165 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(96): warning:  #47-D: incompatible redefinition of macro "RCC_CSR_LSION" (declared at line 2169 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(97): warning:  #47-D: incompatible redefinition of macro "RCC_CSR_LSIRDY" (declared at line 2170 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(103): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_SECF" (declared at line 4488 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(104): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_ALRF" (declared at line 4489 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(105): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_OWF" (declared at line 4490 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(106): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_RSF" (declared at line 4491 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(107): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_CNF" (declared at line 4492 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(108): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_RTOFF" (declared at line 4493 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(125): warning:  #47-D: incompatible redefinition of macro "CAN_MCR_INRQ" (declared at line 6219 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(126): warning:  #47-D: incompatible redefinition of macro "CAN_MCR_NART" (declared at line 6223 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(129): warning:  #47-D: incompatible redefinition of macro "CAN_FMR_FINIT" (declared at line 6438 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(132): warning:  #47-D: incompatible redefinition of macro "CAN_TSR_RQCP0" (declared at line 6241 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(133): warning:  #47-D: incompatible redefinition of macro "CAN_TSR_TME0" (declared at line 6259 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(136): warning:  #47-D: incompatible redefinition of macro "CAN_RF0R_FMP0" (declared at line 6269 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(137): warning:  #47-D: incompatible redefinition of macro "CAN_RF0R_RFOM0" (declared at line 6272 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(140): warning:  #47-D: incompatible redefinition of macro "CAN_IER_TMEIE" (declared at line 6281 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(141): warning:  #47-D: incompatible redefinition of macro "CAN_IER_FMPIE0" (declared at line 6282 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(144): warning:  #47-D: incompatible redefinition of macro "CAN_BTR_SILM" (declared at line 6315 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(145): warning:  #47-D: incompatible redefinition of macro "CAN_BTR_LBKM" (declared at line 6314 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(157): warning:  #47-D: incompatible redefinition of macro "ADC_SR_EOC" (declared at line 3704 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(160): warning:  #47-D: incompatible redefinition of macro "ADC_DR_DATA" (declared at line 4043 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(166): warning:  #47-D: incompatible redefinition of macro "USART_CR1_RE" (declared at line 7667 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(167): warning:  #47-D: incompatible redefinition of macro "USART_CR1_TE" (declared at line 7668 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(168): warning:  #47-D: incompatible redefinition of macro "USART_CR1_UE" (declared at line 7678 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+compiling LCD_Functions.c...
+linking...
+.\Flash\Blinky.axf: Warning: L6304W: Duplicate input file .\flash\system_stm32f10x.o ignored.
+Program Size: Code=5296 RO-data=6608 RW-data=52 ZI-data=1812  
+".\Flash\Blinky.axf" - 0 Errors, 66 Warning(s).
+Load "D:\\GitHub\\UVision-Boilerplate-Project\\Boiler Plate\\Flash\\Blinky.axf" 
 Erase Done.
 Programming Done.
 Verify OK.
-Build target 'MCBSTM32E Flash'
-compiling BoilerPlate.c...
-linking...
-Program Size: Code=4558 RO-data=6610 RW-data=40 ZI-data=1024  
-".\Flash\Blinky.axf" - 0 Errors, 0 Warning(s).
-Load "C:\\GitHub\\Boiler Plate\\Flash\\Blinky.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Clean started: Project: 'BoilerPlate'
-   deleting intermediate output files for target 'Simulator'
-   deleting intermediate output files for target 'MCBSTM32E Flash'
-   deleting intermediate output files for target 'MCBSTM32E RAM'
-   deleting intermediate output files for target 'MCBSTM32E Trace'
 Rebuild target 'MCBSTM32E Flash'
 assembling startup_stm32f10x_hd.s...
 compiling system_stm32f10x.c...
 compiling BoilerPlate.c...
-LCD_Functions.h(3): warning:  #1-D: last line of file ends without a newline
-BoilerPlate.c(68): warning:  #223-D: function "LED_init" declared implicitly
-BoilerPlate.c(83): error:  #20: identifier "__FI" is undefined
-BoilerPlate.c(106): warning:  #223-D: function "LED_On" declared implicitly
-BoilerPlate.c(110): warning:  #223-D: function "LED_Off" declared implicitly
-BoilerPlate.c(118): warning:  #223-D: function "All_LEDs_On" declared implicitly
-BoilerPlate.c(120): warning:  #223-D: function "All_LEDs_Off" declared implicitly
+BoilerPlate.c(169): warning:  #188-D: enumerated type mixed with another type
+BoilerPlate.c(509): warning:  #186-D: pointless comparison of unsigned integer with zero
+BoilerPlate.c(538): warning:  #111-D: statement is unreachable
+BoilerPlate.c(595): warning:  #111-D: statement is unreachable
+BoilerPlate.c(622): warning:  #111-D: statement is unreachable
+BoilerPlate.c(665): warning:  #111-D: statement is unreachable
+BoilerPlate.c(698): warning:  #111-D: statement is unreachable
+BoilerPlate.c(792): warning:  #111-D: statement is unreachable
 compiling GLCD_16bitIF_STM32.c...
 compiling IRQ.c...
 compiling LED_Functions.c...
-LED_Functions.c(63): warning:  #1-D: last line of file ends without a newline
+compiling system_stm32f10x.c...
+compiling Usart.c...
+stm32f10x_nvic.h(255): warning:  #1-D: last line of file ends without a newline
+stm32f10x_lib.h(116): warning:  #1-D: last line of file ends without a newline
+STM32_Reg.h(38): warning:  #47-D: incompatible redefinition of macro "PWR_CR_DBP" (declared at line 1516 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(45): warning:  #47-D: incompatible redefinition of macro "RCC_CR_HSION" (declared at line 1681 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(46): warning:  #47-D: incompatible redefinition of macro "RCC_CR_HSIRDY" (declared at line 1682 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(47): warning:  #47-D: incompatible redefinition of macro "RCC_CR_HSEON" (declared at line 1685 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(48): warning:  #47-D: incompatible redefinition of macro "RCC_CR_HSERDY" (declared at line 1686 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(49): warning:  #47-D: incompatible redefinition of macro "RCC_CR_PLLON" (declared at line 1689 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(50): warning:  #47-D: incompatible redefinition of macro "RCC_CR_PLLRDY" (declared at line 1690 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(53): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_SW" (declared at line 1701 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(54): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_SWS" (declared at line 1710 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(55): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_HPRE" (declared at line 1719 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(58): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_PLLSRC" (declared at line 1769 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(59): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_PLLXTPRE" (declared at line 1771 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(60): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_PLLMULL" (declared at line 1774 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(61): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_USBPRE" (declared at line 1869 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(62): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_MCO" (declared at line 1872 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(65): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_TIM2EN" (declared at line 2089 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(66): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_TIM3EN" (declared at line 2090 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(67): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_TIM4EN" (declared at line 2103 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(68): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_USART2EN" (declared at line 2092 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(69): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_USART3EN" (declared at line 2105 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(71): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_BKPEN" (declared at line 2099 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(72): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_PWREN" (declared at line 2100 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(75): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_AFIOEN" (declared at line 2045 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(76): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPAEN" (declared at line 2046 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(77): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPBEN" (declared at line 2047 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(78): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPCEN" (declared at line 2048 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(79): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPDEN" (declared at line 2049 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(80): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPEEN" (declared at line 2067 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(81): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPFEN" (declared at line 2071 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(82): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPGEN" (declared at line 2072 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(83): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_ADC1EN" (declared at line 2050 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(84): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_ADC2EN" (declared at line 2053 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(85): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_TIM1EN" (declared at line 2056 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(86): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_SPI1EN" (declared at line 2057 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(87): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_USART1EN" (declared at line 2058 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(90): warning:  #47-D: incompatible redefinition of macro "RCC_BDCR_LSEON" (declared at line 2151 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(91): warning:  #47-D: incompatible redefinition of macro "RCC_BDCR_LSERDY" (declared at line 2152 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(92): warning:  #47-D: incompatible redefinition of macro "RCC_BDCR_RTCSEL" (declared at line 2155 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(93): warning:  #47-D: incompatible redefinition of macro "RCC_BDCR_RTCEN" (declared at line 2165 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(96): warning:  #47-D: incompatible redefinition of macro "RCC_CSR_LSION" (declared at line 2169 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(97): warning:  #47-D: incompatible redefinition of macro "RCC_CSR_LSIRDY" (declared at line 2170 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(103): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_SECF" (declared at line 4488 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(104): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_ALRF" (declared at line 4489 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(105): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_OWF" (declared at line 4490 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(106): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_RSF" (declared at line 4491 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(107): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_CNF" (declared at line 4492 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(108): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_RTOFF" (declared at line 4493 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(125): warning:  #47-D: incompatible redefinition of macro "CAN_MCR_INRQ" (declared at line 6219 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(126): warning:  #47-D: incompatible redefinition of macro "CAN_MCR_NART" (declared at line 6223 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(129): warning:  #47-D: incompatible redefinition of macro "CAN_FMR_FINIT" (declared at line 6438 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(132): warning:  #47-D: incompatible redefinition of macro "CAN_TSR_RQCP0" (declared at line 6241 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(133): warning:  #47-D: incompatible redefinition of macro "CAN_TSR_TME0" (declared at line 6259 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(136): warning:  #47-D: incompatible redefinition of macro "CAN_RF0R_FMP0" (declared at line 6269 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(137): warning:  #47-D: incompatible redefinition of macro "CAN_RF0R_RFOM0" (declared at line 6272 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(140): warning:  #47-D: incompatible redefinition of macro "CAN_IER_TMEIE" (declared at line 6281 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(141): warning:  #47-D: incompatible redefinition of macro "CAN_IER_FMPIE0" (declared at line 6282 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(144): warning:  #47-D: incompatible redefinition of macro "CAN_BTR_SILM" (declared at line 6315 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(145): warning:  #47-D: incompatible redefinition of macro "CAN_BTR_LBKM" (declared at line 6314 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(157): warning:  #47-D: incompatible redefinition of macro "ADC_SR_EOC" (declared at line 3704 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(160): warning:  #47-D: incompatible redefinition of macro "ADC_DR_DATA" (declared at line 4043 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(166): warning:  #47-D: incompatible redefinition of macro "USART_CR1_RE" (declared at line 7667 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(167): warning:  #47-D: incompatible redefinition of macro "USART_CR1_TE" (declared at line 7668 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(168): warning:  #47-D: incompatible redefinition of macro "USART_CR1_UE" (declared at line 7678 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
 compiling LCD_Functions.c...
-LCD_Functions.c(32): warning:  #1-D: last line of file ends without a newline
-".\Flash\Blinky.axf" - 1 Errors, 8 Warning(s).
+linking...
+.\Flash\Blinky.axf: Warning: L6304W: Duplicate input file .\flash\system_stm32f10x.o ignored.
+.\Flash\Blinky.axf: Error: L6200E: Symbol displayTestMessage multiply defined (by lcd_functions.o and boilerplate.o).
+.\Flash\Blinky.axf: Error: L6200E: Symbol LED_init multiply defined (by led_functions.o and boilerplate.o).
+.\Flash\Blinky.axf: Error: L6200E: Symbol LED_On multiply defined (by led_functions.o and boilerplate.o).
+.\Flash\Blinky.axf: Error: L6200E: Symbol LED_Off multiply defined (by led_functions.o and boilerplate.o).
+.\Flash\Blinky.axf: Error: L6200E: Symbol All_LEDs_On multiply defined (by led_functions.o and boilerplate.o).
+.\Flash\Blinky.axf: Error: L6200E: Symbol All_LEDs_Off multiply defined (by led_functions.o and boilerplate.o).
+".\Flash\Blinky.axf" - 6 Errors, 74 Warning(s).
 Target not created
-Clean started: Project: 'BoilerPlate'
-   deleting intermediate output files for target 'Simulator'
-   deleting intermediate output files for target 'MCBSTM32E Flash'
-   deleting intermediate output files for target 'MCBSTM32E RAM'
-   deleting intermediate output files for target 'MCBSTM32E Trace'
 Rebuild target 'MCBSTM32E Flash'
 assembling startup_stm32f10x_hd.s...
 compiling system_stm32f10x.c...
 compiling BoilerPlate.c...
-LED_Functions.h(18): warning:  #1295-D: Deprecated declaration All_LEDs_On - give arg types
-LED_Functions.h(20): warning:  #1295-D: Deprecated declaration All_LEDs_Off - give arg types
+BoilerPlate.c(169): warning:  #188-D: enumerated type mixed with another type
+BoilerPlate.c(509): warning:  #186-D: pointless comparison of unsigned integer with zero
+BoilerPlate.c(538): warning:  #111-D: statement is unreachable
+BoilerPlate.c(595): warning:  #111-D: statement is unreachable
+BoilerPlate.c(622): warning:  #111-D: statement is unreachable
+BoilerPlate.c(665): warning:  #111-D: statement is unreachable
+BoilerPlate.c(698): warning:  #111-D: statement is unreachable
+BoilerPlate.c(792): warning:  #111-D: statement is unreachable
 compiling GLCD_16bitIF_STM32.c...
 compiling IRQ.c...
-compiling LED_Functions.c...
-LED_Functions.c(63): warning:  #1-D: last line of file ends without a newline
-compiling LCD_Functions.c...
-LCD_Functions.c(34): warning:  #1-D: last line of file ends without a newline
+compiling system_stm32f10x.c...
+compiling Usart.c...
+stm32f10x_nvic.h(255): warning:  #1-D: last line of file ends without a newline
+stm32f10x_lib.h(116): warning:  #1-D: last line of file ends without a newline
+STM32_Reg.h(38): warning:  #47-D: incompatible redefinition of macro "PWR_CR_DBP" (declared at line 1516 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(45): warning:  #47-D: incompatible redefinition of macro "RCC_CR_HSION" (declared at line 1681 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(46): warning:  #47-D: incompatible redefinition of macro "RCC_CR_HSIRDY" (declared at line 1682 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(47): warning:  #47-D: incompatible redefinition of macro "RCC_CR_HSEON" (declared at line 1685 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(48): warning:  #47-D: incompatible redefinition of macro "RCC_CR_HSERDY" (declared at line 1686 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(49): warning:  #47-D: incompatible redefinition of macro "RCC_CR_PLLON" (declared at line 1689 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(50): warning:  #47-D: incompatible redefinition of macro "RCC_CR_PLLRDY" (declared at line 1690 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(53): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_SW" (declared at line 1701 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(54): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_SWS" (declared at line 1710 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(55): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_HPRE" (declared at line 1719 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(58): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_PLLSRC" (declared at line 1769 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(59): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_PLLXTPRE" (declared at line 1771 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(60): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_PLLMULL" (declared at line 1774 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(61): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_USBPRE" (declared at line 1869 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(62): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_MCO" (declared at line 1872 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(65): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_TIM2EN" (declared at line 2089 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(66): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_TIM3EN" (declared at line 2090 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(67): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_TIM4EN" (declared at line 2103 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(68): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_USART2EN" (declared at line 2092 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(69): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_USART3EN" (declared at line 2105 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(71): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_BKPEN" (declared at line 2099 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(72): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_PWREN" (declared at line 2100 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(75): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_AFIOEN" (declared at line 2045 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(76): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPAEN" (declared at line 2046 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(77): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPBEN" (declared at line 2047 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(78): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPCEN" (declared at line 2048 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(79): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPDEN" (declared at line 2049 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(80): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPEEN" (declared at line 2067 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(81): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPFEN" (declared at line 2071 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(82): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPGEN" (declared at line 2072 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(83): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_ADC1EN" (declared at line 2050 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(84): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_ADC2EN" (declared at line 2053 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(85): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_TIM1EN" (declared at line 2056 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(86): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_SPI1EN" (declared at line 2057 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(87): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_USART1EN" (declared at line 2058 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(90): warning:  #47-D: incompatible redefinition of macro "RCC_BDCR_LSEON" (declared at line 2151 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(91): warning:  #47-D: incompatible redefinition of macro "RCC_BDCR_LSERDY" (declared at line 2152 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(92): warning:  #47-D: incompatible redefinition of macro "RCC_BDCR_RTCSEL" (declared at line 2155 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(93): warning:  #47-D: incompatible redefinition of macro "RCC_BDCR_RTCEN" (declared at line 2165 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(96): warning:  #47-D: incompatible redefinition of macro "RCC_CSR_LSION" (declared at line 2169 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(97): warning:  #47-D: incompatible redefinition of macro "RCC_CSR_LSIRDY" (declared at line 2170 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(103): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_SECF" (declared at line 4488 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(104): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_ALRF" (declared at line 4489 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(105): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_OWF" (declared at line 4490 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(106): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_RSF" (declared at line 4491 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(107): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_CNF" (declared at line 4492 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(108): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_RTOFF" (declared at line 4493 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(125): warning:  #47-D: incompatible redefinition of macro "CAN_MCR_INRQ" (declared at line 6219 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(126): warning:  #47-D: incompatible redefinition of macro "CAN_MCR_NART" (declared at line 6223 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(129): warning:  #47-D: incompatible redefinition of macro "CAN_FMR_FINIT" (declared at line 6438 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(132): warning:  #47-D: incompatible redefinition of macro "CAN_TSR_RQCP0" (declared at line 6241 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(133): warning:  #47-D: incompatible redefinition of macro "CAN_TSR_TME0" (declared at line 6259 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(136): warning:  #47-D: incompatible redefinition of macro "CAN_RF0R_FMP0" (declared at line 6269 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(137): warning:  #47-D: incompatible redefinition of macro "CAN_RF0R_RFOM0" (declared at line 6272 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(140): warning:  #47-D: incompatible redefinition of macro "CAN_IER_TMEIE" (declared at line 6281 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(141): warning:  #47-D: incompatible redefinition of macro "CAN_IER_FMPIE0" (declared at line 6282 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(144): warning:  #47-D: incompatible redefinition of macro "CAN_BTR_SILM" (declared at line 6315 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(145): warning:  #47-D: incompatible redefinition of macro "CAN_BTR_LBKM" (declared at line 6314 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(157): warning:  #47-D: incompatible redefinition of macro "ADC_SR_EOC" (declared at line 3704 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(160): warning:  #47-D: incompatible redefinition of macro "ADC_DR_DATA" (declared at line 4043 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(166): warning:  #47-D: incompatible redefinition of macro "USART_CR1_RE" (declared at line 7667 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(167): warning:  #47-D: incompatible redefinition of macro "USART_CR1_TE" (declared at line 7668 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(168): warning:  #47-D: incompatible redefinition of macro "USART_CR1_UE" (declared at line 7678 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
 linking...
-Program Size: Code=4558 RO-data=6610 RW-data=40 ZI-data=1024  
-".\Flash\Blinky.axf" - 0 Errors, 4 Warning(s).
-Clean started: Project: 'BoilerPlate'
-   deleting intermediate output files for target 'Simulator'
-   deleting intermediate output files for target 'MCBSTM32E Flash'
-   deleting intermediate output files for target 'MCBSTM32E RAM'
-   deleting intermediate output files for target 'MCBSTM32E Trace'
+.\Flash\Blinky.axf: Warning: L6304W: Duplicate input file .\flash\system_stm32f10x.o ignored.
+.\Flash\Blinky.axf: Error: L6218E: Undefined symbol AD_done (referred from boilerplate.o).
+.\Flash\Blinky.axf: Error: L6218E: Undefined symbol AD_last (referred from boilerplate.o).
+.\Flash\Blinky.axf: Error: L6218E: Undefined symbol joystick_int (referred from boilerplate.o).
+.\Flash\Blinky.axf: Error: L6218E: Undefined symbol ticks (referred from boilerplate.o).
+.\Flash\Blinky.axf: Error: L6218E: Undefined symbol user_btn_int (referred from boilerplate.o).
+".\Flash\Blinky.axf" - 5 Errors, 74 Warning(s).
+Target not created
 Rebuild target 'MCBSTM32E Flash'
 assembling startup_stm32f10x_hd.s...
 compiling system_stm32f10x.c...
 compiling BoilerPlate.c...
+BoilerPlate.c(169): warning:  #188-D: enumerated type mixed with another type
+BoilerPlate.c(509): warning:  #186-D: pointless comparison of unsigned integer with zero
+BoilerPlate.c(538): warning:  #111-D: statement is unreachable
+BoilerPlate.c(595): warning:  #111-D: statement is unreachable
+BoilerPlate.c(622): warning:  #111-D: statement is unreachable
+BoilerPlate.c(665): warning:  #111-D: statement is unreachable
+BoilerPlate.c(698): warning:  #111-D: statement is unreachable
+BoilerPlate.c(792): warning:  #111-D: statement is unreachable
 compiling GLCD_16bitIF_STM32.c...
 compiling IRQ.c...
-compiling LED_Functions.c...
-compiling LCD_Functions.c...
+compiling system_stm32f10x.c...
+compiling Usart.c...
+stm32f10x_nvic.h(255): warning:  #1-D: last line of file ends without a newline
+stm32f10x_lib.h(116): warning:  #1-D: last line of file ends without a newline
+STM32_Reg.h(38): warning:  #47-D: incompatible redefinition of macro "PWR_CR_DBP" (declared at line 1516 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(45): warning:  #47-D: incompatible redefinition of macro "RCC_CR_HSION" (declared at line 1681 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(46): warning:  #47-D: incompatible redefinition of macro "RCC_CR_HSIRDY" (declared at line 1682 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(47): warning:  #47-D: incompatible redefinition of macro "RCC_CR_HSEON" (declared at line 1685 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(48): warning:  #47-D: incompatible redefinition of macro "RCC_CR_HSERDY" (declared at line 1686 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(49): warning:  #47-D: incompatible redefinition of macro "RCC_CR_PLLON" (declared at line 1689 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(50): warning:  #47-D: incompatible redefinition of macro "RCC_CR_PLLRDY" (declared at line 1690 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(53): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_SW" (declared at line 1701 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(54): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_SWS" (declared at line 1710 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(55): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_HPRE" (declared at line 1719 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(58): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_PLLSRC" (declared at line 1769 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(59): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_PLLXTPRE" (declared at line 1771 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(60): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_PLLMULL" (declared at line 1774 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(61): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_USBPRE" (declared at line 1869 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(62): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_MCO" (declared at line 1872 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(65): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_TIM2EN" (declared at line 2089 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(66): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_TIM3EN" (declared at line 2090 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(67): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_TIM4EN" (declared at line 2103 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(68): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_USART2EN" (declared at line 2092 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(69): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_USART3EN" (declared at line 2105 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(71): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_BKPEN" (declared at line 2099 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(72): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_PWREN" (declared at line 2100 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(75): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_AFIOEN" (declared at line 2045 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(76): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPAEN" (declared at line 2046 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(77): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPBEN" (declared at line 2047 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(78): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPCEN" (declared at line 2048 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(79): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPDEN" (declared at line 2049 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(80): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPEEN" (declared at line 2067 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(81): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPFEN" (declared at line 2071 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(82): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPGEN" (declared at line 2072 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(83): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_ADC1EN" (declared at line 2050 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(84): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_ADC2EN" (declared at line 2053 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(85): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_TIM1EN" (declared at line 2056 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(86): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_SPI1EN" (declared at line 2057 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(87): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_USART1EN" (declared at line 2058 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(90): warning:  #47-D: incompatible redefinition of macro "RCC_BDCR_LSEON" (declared at line 2151 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(91): warning:  #47-D: incompatible redefinition of macro "RCC_BDCR_LSERDY" (declared at line 2152 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(92): warning:  #47-D: incompatible redefinition of macro "RCC_BDCR_RTCSEL" (declared at line 2155 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(93): warning:  #47-D: incompatible redefinition of macro "RCC_BDCR_RTCEN" (declared at line 2165 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(96): warning:  #47-D: incompatible redefinition of macro "RCC_CSR_LSION" (declared at line 2169 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(97): warning:  #47-D: incompatible redefinition of macro "RCC_CSR_LSIRDY" (declared at line 2170 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(103): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_SECF" (declared at line 4488 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(104): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_ALRF" (declared at line 4489 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(105): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_OWF" (declared at line 4490 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(106): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_RSF" (declared at line 4491 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(107): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_CNF" (declared at line 4492 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(108): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_RTOFF" (declared at line 4493 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(125): warning:  #47-D: incompatible redefinition of macro "CAN_MCR_INRQ" (declared at line 6219 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(126): warning:  #47-D: incompatible redefinition of macro "CAN_MCR_NART" (declared at line 6223 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(129): warning:  #47-D: incompatible redefinition of macro "CAN_FMR_FINIT" (declared at line 6438 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(132): warning:  #47-D: incompatible redefinition of macro "CAN_TSR_RQCP0" (declared at line 6241 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(133): warning:  #47-D: incompatible redefinition of macro "CAN_TSR_TME0" (declared at line 6259 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(136): warning:  #47-D: incompatible redefinition of macro "CAN_RF0R_FMP0" (declared at line 6269 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(137): warning:  #47-D: incompatible redefinition of macro "CAN_RF0R_RFOM0" (declared at line 6272 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(140): warning:  #47-D: incompatible redefinition of macro "CAN_IER_TMEIE" (declared at line 6281 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(141): warning:  #47-D: incompatible redefinition of macro "CAN_IER_FMPIE0" (declared at line 6282 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(144): warning:  #47-D: incompatible redefinition of macro "CAN_BTR_SILM" (declared at line 6315 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(145): warning:  #47-D: incompatible redefinition of macro "CAN_BTR_LBKM" (declared at line 6314 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(157): warning:  #47-D: incompatible redefinition of macro "ADC_SR_EOC" (declared at line 3704 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(160): warning:  #47-D: incompatible redefinition of macro "ADC_DR_DATA" (declared at line 4043 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(166): warning:  #47-D: incompatible redefinition of macro "USART_CR1_RE" (declared at line 7667 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(167): warning:  #47-D: incompatible redefinition of macro "USART_CR1_TE" (declared at line 7668 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(168): warning:  #47-D: incompatible redefinition of macro "USART_CR1_UE" (declared at line 7678 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
 linking...
-Program Size: Code=4558 RO-data=6610 RW-data=40 ZI-data=1024  
-".\Flash\Blinky.axf" - 0 Errors, 0 Warning(s).
-Build target 'MCBSTM32E Flash'
+.\Flash\Blinky.axf: Warning: L6304W: Duplicate input file .\flash\system_stm32f10x.o ignored.
+Program Size: Code=8564 RO-data=6608 RW-data=64 ZI-data=1808  
+".\Flash\Blinky.axf" - 0 Errors, 74 Warning(s).
+Rebuild target 'MCBSTM32E Flash'
+assembling startup_stm32f10x_hd.s...
+compiling system_stm32f10x.c...
 compiling BoilerPlate.c...
-compiling LED_Functions.c...
-compiling LCD_Functions.c...
+BoilerPlate.c(169): warning:  #188-D: enumerated type mixed with another type
+BoilerPlate.c(509): warning:  #186-D: pointless comparison of unsigned integer with zero
+BoilerPlate.c(538): warning:  #111-D: statement is unreachable
+BoilerPlate.c(595): warning:  #111-D: statement is unreachable
+BoilerPlate.c(622): warning:  #111-D: statement is unreachable
+BoilerPlate.c(665): warning:  #111-D: statement is unreachable
+BoilerPlate.c(698): warning:  #111-D: statement is unreachable
+BoilerPlate.c(792): warning:  #111-D: statement is unreachable
+compiling GLCD_16bitIF_STM32.c...
+compiling IRQ.c...
+compiling system_stm32f10x.c...
+compiling Usart.c...
+stm32f10x_nvic.h(255): warning:  #1-D: last line of file ends without a newline
+stm32f10x_lib.h(116): warning:  #1-D: last line of file ends without a newline
+STM32_Reg.h(38): warning:  #47-D: incompatible redefinition of macro "PWR_CR_DBP" (declared at line 1516 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(45): warning:  #47-D: incompatible redefinition of macro "RCC_CR_HSION" (declared at line 1681 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(46): warning:  #47-D: incompatible redefinition of macro "RCC_CR_HSIRDY" (declared at line 1682 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(47): warning:  #47-D: incompatible redefinition of macro "RCC_CR_HSEON" (declared at line 1685 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(48): warning:  #47-D: incompatible redefinition of macro "RCC_CR_HSERDY" (declared at line 1686 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(49): warning:  #47-D: incompatible redefinition of macro "RCC_CR_PLLON" (declared at line 1689 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(50): warning:  #47-D: incompatible redefinition of macro "RCC_CR_PLLRDY" (declared at line 1690 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(53): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_SW" (declared at line 1701 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(54): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_SWS" (declared at line 1710 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(55): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_HPRE" (declared at line 1719 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(58): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_PLLSRC" (declared at line 1769 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(59): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_PLLXTPRE" (declared at line 1771 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(60): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_PLLMULL" (declared at line 1774 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(61): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_USBPRE" (declared at line 1869 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(62): warning:  #47-D: incompatible redefinition of macro "RCC_CFGR_MCO" (declared at line 1872 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(65): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_TIM2EN" (declared at line 2089 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(66): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_TIM3EN" (declared at line 2090 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(67): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_TIM4EN" (declared at line 2103 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(68): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_USART2EN" (declared at line 2092 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(69): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_USART3EN" (declared at line 2105 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(71): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_BKPEN" (declared at line 2099 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(72): warning:  #47-D: incompatible redefinition of macro "RCC_APB1ENR_PWREN" (declared at line 2100 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(75): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_AFIOEN" (declared at line 2045 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(76): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPAEN" (declared at line 2046 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(77): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPBEN" (declared at line 2047 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(78): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPCEN" (declared at line 2048 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(79): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPDEN" (declared at line 2049 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(80): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPEEN" (declared at line 2067 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(81): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPFEN" (declared at line 2071 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(82): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_IOPGEN" (declared at line 2072 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(83): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_ADC1EN" (declared at line 2050 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(84): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_ADC2EN" (declared at line 2053 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(85): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_TIM1EN" (declared at line 2056 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(86): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_SPI1EN" (declared at line 2057 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(87): warning:  #47-D: incompatible redefinition of macro "RCC_APB2ENR_USART1EN" (declared at line 2058 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(90): warning:  #47-D: incompatible redefinition of macro "RCC_BDCR_LSEON" (declared at line 2151 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(91): warning:  #47-D: incompatible redefinition of macro "RCC_BDCR_LSERDY" (declared at line 2152 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(92): warning:  #47-D: incompatible redefinition of macro "RCC_BDCR_RTCSEL" (declared at line 2155 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(93): warning:  #47-D: incompatible redefinition of macro "RCC_BDCR_RTCEN" (declared at line 2165 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(96): warning:  #47-D: incompatible redefinition of macro "RCC_CSR_LSION" (declared at line 2169 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(97): warning:  #47-D: incompatible redefinition of macro "RCC_CSR_LSIRDY" (declared at line 2170 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(103): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_SECF" (declared at line 4488 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(104): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_ALRF" (declared at line 4489 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(105): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_OWF" (declared at line 4490 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(106): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_RSF" (declared at line 4491 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(107): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_CNF" (declared at line 4492 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(108): warning:  #47-D: incompatible redefinition of macro "RTC_CRL_RTOFF" (declared at line 4493 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(125): warning:  #47-D: incompatible redefinition of macro "CAN_MCR_INRQ" (declared at line 6219 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(126): warning:  #47-D: incompatible redefinition of macro "CAN_MCR_NART" (declared at line 6223 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(129): warning:  #47-D: incompatible redefinition of macro "CAN_FMR_FINIT" (declared at line 6438 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(132): warning:  #47-D: incompatible redefinition of macro "CAN_TSR_RQCP0" (declared at line 6241 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(133): warning:  #47-D: incompatible redefinition of macro "CAN_TSR_TME0" (declared at line 6259 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(136): warning:  #47-D: incompatible redefinition of macro "CAN_RF0R_FMP0" (declared at line 6269 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(137): warning:  #47-D: incompatible redefinition of macro "CAN_RF0R_RFOM0" (declared at line 6272 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(140): warning:  #47-D: incompatible redefinition of macro "CAN_IER_TMEIE" (declared at line 6281 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(141): warning:  #47-D: incompatible redefinition of macro "CAN_IER_FMPIE0" (declared at line 6282 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(144): warning:  #47-D: incompatible redefinition of macro "CAN_BTR_SILM" (declared at line 6315 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(145): warning:  #47-D: incompatible redefinition of macro "CAN_BTR_LBKM" (declared at line 6314 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(157): warning:  #47-D: incompatible redefinition of macro "ADC_SR_EOC" (declared at line 3704 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(160): warning:  #47-D: incompatible redefinition of macro "ADC_DR_DATA" (declared at line 4043 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(166): warning:  #47-D: incompatible redefinition of macro "USART_CR1_RE" (declared at line 7667 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(167): warning:  #47-D: incompatible redefinition of macro "USART_CR1_TE" (declared at line 7668 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
+STM32_Reg.h(168): warning:  #47-D: incompatible redefinition of macro "USART_CR1_UE" (declared at line 7678 of "C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h")
 linking...
-Program Size: Code=4558 RO-data=6610 RW-data=40 ZI-data=1024  
-".\Flash\Blinky.axf" - 0 Errors, 0 Warning(s).
-Load "C:\\GitHub\\Boiler Plate\\Flash\\Blinky.axf" 
+.\Flash\Blinky.axf: Warning: L6304W: Duplicate input file .\flash\system_stm32f10x.o ignored.
+Program Size: Code=8564 RO-data=6608 RW-data=64 ZI-data=1808  
+".\Flash\Blinky.axf" - 0 Errors, 74 Warning(s).
+Load "D:\\GitHub\\UVision-Boilerplate-Project\\Boiler Plate\\Flash\\Blinky.axf" 
 Erase Done.
 Programming Done.
 Verify OK.
