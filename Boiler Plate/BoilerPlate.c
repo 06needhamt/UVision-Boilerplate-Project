@@ -19,6 +19,8 @@
 #include "LED_Functions.h"
 #include "LCD_Functions.h"
 #include "Button_Functions.h"
+#include "Potentiometer_Functions.h"
+#include "Speaker_Functions.h"
 
 #define TRUE		1
 #define FALSE		0
@@ -27,15 +29,26 @@
 
 extern unsigned char clock_1s;
 
+//Following are used for ADC
+extern unsigned short AD_last;	 		//Last ADC conversion value
+extern unsigned char  AD_done;			//ADC conversion complete flag
+extern unsigned long ticks;
+int doTone = 0;
 //This function delays program by secs seconds. This function relies on
 //a timer which is used to produce an interrupt at regular intervals. See
 //further down for the way this timer is activated. The timer interrupt
 //handler is in IRQ.c source file. You need to supply the code for this
 //interrupt (this is a vectored interrupt) in order for this function
 //to work. 
+void delay10th(unsigned long tenthMsecs) {
+	//Set the tick counter in number of 10th of msecs
+	ticks = tenthMsecs;
+	//Wait until the tick counter is 0 (zero)
+	while (ticks) {}
+}
+
 void delay (int secs) {
 	int n;
-
 	//Repeat the following secs times
 	for (n = 0; n < secs; n++) {
 		//First reset clock_1s
@@ -53,6 +66,7 @@ void Vectored_Interrupt(int button){
 	switch(button){
 		case USER_BUTTON:
 				GLCD_DisplayString(0, 0, __FI, "< --User Button -- >");
+				doTone = ~doTone;
 			break;
 		case JOYSTICK_SELECT:
 							GLCD_DisplayString(0, 0, __FI, "< --JSTK Select -->");
@@ -79,7 +93,7 @@ void Vectored_Interrupt(int button){
  *----------------------------------------------------------------------------*/
 int main (void) {
 	int loopCount = 1;
-	int i;
+	int i, c;
 
 	//Following statement sets the timer interrupt frequency
 	//The clock rate on this boards MCU is 72 Mhz - this means
@@ -90,17 +104,20 @@ int main (void) {
 	//NOTE: We could have chosen to generate a timer interrupt every 1 msec
 	//if we wished and that would be quite acceptable in which case we would
 	//need to modify the interrupt handler routine in IRQ.c file.
-  	SysTick_Config(SystemCoreClock/100);  /* Generate interrupt each 10 ms      */
+  	SysTick_Config(SystemCoreClock/10000);  /* Generate interrupt each 10 ms      */
 
    	//Here we initialise the LED driver
   	LED_init();                           /* LED Initialization                 */
 
+		pin_PA4_For_Speaker(); //Function that initializes the Speaker
+			
+		ADC_init(); //Function that initializes ADC
+	
 #ifdef __USE_LCD
 	//In order to use the LCD display, the device needs to be
 	//properly configured and initialized (refer to GLCD_16bitIF_STM32.c file).
 	//This is a complex process and is beyond the scope of this module.
   	GLCD_Init();                          /* Initialize graphical LCD display   */
-
 	//The following functions demonstrate how the LCD display can be used.
 	//This is a 240 x 320 pixel colour screen and the pixels can be individually
 	//manipulated allowing graphics shapes to be constructed and displayed.
@@ -169,9 +186,26 @@ int main (void) {
 	joyStick_IntrEnable_PG7();
 	joyStick_IntrEnable_PD3();
 	
-		while(TRUE){ //loop forever, testing vectored interrupts
+		//while(TRUE){ //loop forever, testing vectored interrupts
 			
-		}
+		//}
+		
+			AD_done = 0;
+			ADC1->CR2 |= (1UL << 22);       		//Start the ADC conversion
+			doTone = 0;
+			while (TRUE) {
+				//Check to see if ADC sampling is completed
+				if (AD_done) {
+					//Yes, so get part of the sample value
+					c = (AD_last >> 8) + 4;
+					if (doTone) {
+						//If enabled, switch the tone on
+				   		generate_Tone_On_Speaker(c * 50, 10);
+					}
+					AD_done = 0;  					//Reset the ADC complete flag waiting for next sample
+					ADC1->CR2 |= (1UL << 22);   	//Start the next ADC conversion
+				}
+			}
 		
 		/* PUT MORE LED DISPLAY PATTERNS BELOW */
 

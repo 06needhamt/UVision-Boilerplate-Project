@@ -11,3 +11,5 @@
 .\flash\boilerplate.o: LED_Functions.h
 .\flash\boilerplate.o: LCD_Functions.h
 .\flash\boilerplate.o: Button_Functions.h
+.\flash\boilerplate.o: Potentiometer_Functions.h
+.\flash\boilerplate.o: Speaker_Functions.h

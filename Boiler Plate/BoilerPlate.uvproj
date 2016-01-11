@@ -437,6 +437,16 @@
               <FileType>1</FileType>
               <FilePath>.\Button_Functions.c</FilePath>
             </File>
+            <File>
+              <FileName>Potentiomter_Functions.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Potentiomter_Functions.c</FilePath>
+            </File>
+            <File>
+              <FileName>Speaker_Functions.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Speaker_Functions.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -881,6 +891,16 @@
               <FileName>Button_Functions.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Button_Functions.c</FilePath>
+            </File>
+            <File>
+              <FileName>Potentiomter_Functions.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Potentiomter_Functions.c</FilePath>
+            </File>
+            <File>
+              <FileName>Speaker_Functions.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Speaker_Functions.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -1327,6 +1347,16 @@
               <FileType>1</FileType>
               <FilePath>.\Button_Functions.c</FilePath>
             </File>
+            <File>
+              <FileName>Potentiomter_Functions.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Potentiomter_Functions.c</FilePath>
+            </File>
+            <File>
+              <FileName>Speaker_Functions.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Speaker_Functions.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -1771,6 +1801,16 @@
               <FileName>Button_Functions.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Button_Functions.c</FilePath>
+            </File>
+            <File>
+              <FileName>Potentiomter_Functions.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Potentiomter_Functions.c</FilePath>
+            </File>
+            <File>
+              <FileName>Speaker_Functions.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Speaker_Functions.c</FilePath>
             </File>
           </Files>
         </Group>

@@ -13,6 +13,10 @@
 
 extern void Vectored_Interrupt(int amount);
 
+unsigned short AD_last;                 /* Last converted value               */
+unsigned char  AD_done = 0;             /* AD conversion done flag            */
+
+unsigned long ticks;
 
 unsigned char  clock_1s;                /* Flag activated each second         */
 
@@ -21,13 +25,31 @@ unsigned char  clock_1s;                /* Flag activated each second         */
   SysTick interrupt happens every 10 ms
  *----------------------------------------------------------------------------*/
 void SysTick_Handler (void) {           /* SysTick Interrupt Handler (10ms)   */
-	static unsigned long ticks = 0;
+
 	
 	//1 sec = 100 x 10 msec, hence the 10 msec counter 'ticks'
-	if (ticks++ >= 9) {                /* Set clock_1s every 1/10 second    	  */
-		ticks    = 0;
-		clock_1s = 1;
+//	if (ticks++ >= 1) {                /* Set clock_1s every 1/10 second    	  */
+//		ticks    = 0;
+//		clock_1s = 1;
+//	}
+		if (ticks > 0) {
+		//Decrement the tick counter every 1 msec as long as it is greater than 0.
+		ticks -= 1;
 	}
+}
+
+
+/*----------------------------------------------------------------------------
+  A/D IRQ: Executed when A/D Conversion is done
+ *----------------------------------------------------------------------------*/
+void ADC1_2_IRQHandler(void) {
+  if (ADC1->SR & (1 << 1)) {            /* ADC1 EOC interrupt?                */
+    AD_last = ADC1->DR;
+    AD_done = 1;
+
+    ADC1->SR &= ~(1 << 1);              /* clear EOC interrupt                */
+  }
+
 }
 
 
