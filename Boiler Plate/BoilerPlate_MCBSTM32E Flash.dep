@@ -1,68 +1,0 @@
-Dependencies for Project 'BoilerPlate', Target 'MCBSTM32E Flash': (DO NOT MODIFY !)
-F (.\startup_stm32f10x_hd.s)(0x5668124C)(--cpu Cortex-M3 --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-I G:\Keil\IDE\ARM\RV31\INC-I G:\Keil\IDE\ARM\CMSIS\Include-I G:\Keil\IDE\ARM\Inc\ST\STM32F10x--list .\flash\startup_stm32f10x_hd.lst --xref -o .\flash\startup_stm32f10x_hd.o --depend .\flash\startup_stm32f10x_hd.d)
-F (.\system_stm32f10x.c)(0x5668124C)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I G:\Keil\IDE\ARM\RV31\INC-I G:\Keil\IDE\ARM\CMSIS\Include-I G:\Keil\IDE\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -D__USE_LCD -o .\flash\system_stm32f10x.o --omf_browse .\flash\system_stm32f10x.crf --depend .\flash\system_stm32f10x.d)
-I (G:\Keil\IDE\ARM\Inc\ST\STM32F10x\stm32f10x.h)(0x51C8125A)
-I (G:\Keil\IDE\ARM\CMSIS\Include\core_cm3.h)(0x51C817BA)
-I (G:\Keil\IDE\ARM\ARMCC\include\stdint.h)(0x51C819B4)
-I (G:\Keil\IDE\ARM\CMSIS\Include\core_cmInstr.h)(0x51C817BA)
-I (G:\Keil\IDE\ARM\CMSIS\Include\core_cmFunc.h)(0x51C817BA)
-I (G:\Keil\IDE\ARM\Inc\ST\STM32F10x\system_stm32f10x.h)(0x51C8125A)
-F (.\BoilerPlate.c)(0x5693E0D4)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I G:\Keil\IDE\ARM\RV31\INC-I G:\Keil\IDE\ARM\CMSIS\Include-I G:\Keil\IDE\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -D__USE_LCD -o .\flash\boilerplate.o --omf_browse .\flash\boilerplate.crf --depend .\flash\boilerplate.d)
-I (G:\Keil\IDE\ARM\ARMCC\include\stdio.h)(0x51C819B4)
-I (G:\Keil\IDE\ARM\ARMCC\include\string.h)(0x51C819B4)
-I (G:\Keil\IDE\ARM\Inc\ST\STM32F10x\stm32f10x.h)(0x51C8125A)
-I (G:\Keil\IDE\ARM\CMSIS\Include\core_cm3.h)(0x51C817BA)
-I (G:\Keil\IDE\ARM\ARMCC\include\stdint.h)(0x51C819B4)
-I (G:\Keil\IDE\ARM\CMSIS\Include\core_cmInstr.h)(0x51C817BA)
-I (G:\Keil\IDE\ARM\CMSIS\Include\core_cmFunc.h)(0x51C817BA)
-I (G:\Keil\IDE\ARM\Inc\ST\STM32F10x\system_stm32f10x.h)(0x51C8125A)
-I (C:\Users\Alex\Desktop\GitHub\UVision-Boilerplate-Project\Boiler Plate\GLCD.h)(0x5668124C)
-I (C:\Users\Alex\Desktop\GitHub\UVision-Boilerplate-Project\Boiler Plate\LED_Functions.h)(0x5668124C)
-I (C:\Users\Alex\Desktop\GitHub\UVision-Boilerplate-Project\Boiler Plate\LCD_Functions.h)(0x5668124C)
-I (C:\Users\Alex\Desktop\GitHub\UVision-Boilerplate-Project\Boiler Plate\Button_Functions.h)(0x56699876)
-F (.\GLCD_16bitIF_STM32.c)(0x5668124C)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I G:\Keil\IDE\ARM\RV31\INC-I G:\Keil\IDE\ARM\CMSIS\Include-I G:\Keil\IDE\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -D__USE_LCD -o .\flash\glcd_16bitif_stm32.o --omf_browse .\flash\glcd_16bitif_stm32.crf --depend .\flash\glcd_16bitif_stm32.d)
-I (G:\Keil\IDE\ARM\Inc\ST\STM32F10x\stm32f10x.h)(0x51C8125A)
-I (G:\Keil\IDE\ARM\CMSIS\Include\core_cm3.h)(0x51C817BA)
-I (G:\Keil\IDE\ARM\ARMCC\include\stdint.h)(0x51C819B4)
-I (G:\Keil\IDE\ARM\CMSIS\Include\core_cmInstr.h)(0x51C817BA)
-I (G:\Keil\IDE\ARM\CMSIS\Include\core_cmFunc.h)(0x51C817BA)
-I (G:\Keil\IDE\ARM\Inc\ST\STM32F10x\system_stm32f10x.h)(0x51C8125A)
-I (C:\Users\Alex\Desktop\GitHub\UVision-Boilerplate-Project\Boiler Plate\GLCD.h)(0x5668124C)
-I (C:\Users\Alex\Desktop\GitHub\UVision-Boilerplate-Project\Boiler Plate\Font_6x8_h.h)(0x5668124C)
-I (C:\Users\Alex\Desktop\GitHub\UVision-Boilerplate-Project\Boiler Plate\Font_16x24_h.h)(0x5668124C)
-F (.\IRQ.c)(0x56699900)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I G:\Keil\IDE\ARM\RV31\INC-I G:\Keil\IDE\ARM\CMSIS\Include-I G:\Keil\IDE\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -D__USE_LCD -o .\flash\irq.o --omf_browse .\flash\irq.crf --depend .\flash\irq.d)
-I (G:\Keil\IDE\ARM\Inc\ST\STM32F10x\stm32f10x.h)(0x51C8125A)
-I (G:\Keil\IDE\ARM\CMSIS\Include\core_cm3.h)(0x51C817BA)
-I (G:\Keil\IDE\ARM\ARMCC\include\stdint.h)(0x51C819B4)
-I (G:\Keil\IDE\ARM\CMSIS\Include\core_cmInstr.h)(0x51C817BA)
-I (G:\Keil\IDE\ARM\CMSIS\Include\core_cmFunc.h)(0x51C817BA)
-I (G:\Keil\IDE\ARM\Inc\ST\STM32F10x\system_stm32f10x.h)(0x51C8125A)
-I (C:\Users\Alex\Desktop\GitHub\UVision-Boilerplate-Project\Boiler Plate\Button_Functions.h)(0x56699876)
-F (.\LED_Functions.c)(0x5668124C)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I G:\Keil\IDE\ARM\RV31\INC-I G:\Keil\IDE\ARM\CMSIS\Include-I G:\Keil\IDE\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -D__USE_LCD -o .\flash\led_functions.o --omf_browse .\flash\led_functions.crf --depend .\flash\led_functions.d)
-I (G:\Keil\IDE\ARM\Inc\ST\STM32F10x\stm32f10x.h)(0x51C8125A)
-I (G:\Keil\IDE\ARM\CMSIS\Include\core_cm3.h)(0x51C817BA)
-I (G:\Keil\IDE\ARM\ARMCC\include\stdint.h)(0x51C819B4)
-I (G:\Keil\IDE\ARM\CMSIS\Include\core_cmInstr.h)(0x51C817BA)
-I (G:\Keil\IDE\ARM\CMSIS\Include\core_cmFunc.h)(0x51C817BA)
-I (G:\Keil\IDE\ARM\Inc\ST\STM32F10x\system_stm32f10x.h)(0x51C8125A)
-F (.\LCD_Functions.c)(0x5668124C)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I G:\Keil\IDE\ARM\RV31\INC-I G:\Keil\IDE\ARM\CMSIS\Include-I G:\Keil\IDE\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -D__USE_LCD -o .\flash\lcd_functions.o --omf_browse .\flash\lcd_functions.crf --depend .\flash\lcd_functions.d)
-I (G:\Keil\IDE\ARM\ARMCC\include\stdio.h)(0x51C819B4)
-I (G:\Keil\IDE\ARM\ARMCC\include\string.h)(0x51C819B4)
-I (G:\Keil\IDE\ARM\Inc\ST\STM32F10x\stm32f10x.h)(0x51C8125A)
-I (G:\Keil\IDE\ARM\CMSIS\Include\core_cm3.h)(0x51C817BA)
-I (G:\Keil\IDE\ARM\ARMCC\include\stdint.h)(0x51C819B4)
-I (G:\Keil\IDE\ARM\CMSIS\Include\core_cmInstr.h)(0x51C817BA)
-I (G:\Keil\IDE\ARM\CMSIS\Include\core_cmFunc.h)(0x51C817BA)
-I (G:\Keil\IDE\ARM\Inc\ST\STM32F10x\system_stm32f10x.h)(0x51C8125A)
-I (C:\Users\Alex\Desktop\GitHub\UVision-Boilerplate-Project\Boiler Plate\GLCD.h)(0x5668124C)
-I (C:\Users\Alex\Desktop\GitHub\UVision-Boilerplate-Project\Boiler Plate\LCD_Functions.h)(0x5668124C)
-F (.\Button_Functions.c)(0x56699876)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I G:\Keil\IDE\ARM\RV31\INC-I G:\Keil\IDE\ARM\CMSIS\Include-I G:\Keil\IDE\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -D__USE_LCD -o .\flash\button_functions.o --omf_browse .\flash\button_functions.crf --depend .\flash\button_functions.d)
-I (G:\Keil\IDE\ARM\Inc\ST\STM32F10x\stm32f10x.h)(0x51C8125A)
-I (G:\Keil\IDE\ARM\CMSIS\Include\core_cm3.h)(0x51C817BA)
-I (G:\Keil\IDE\ARM\ARMCC\include\stdint.h)(0x51C819B4)
-I (G:\Keil\IDE\ARM\CMSIS\Include\core_cmInstr.h)(0x51C817BA)
-I (G:\Keil\IDE\ARM\CMSIS\Include\core_cmFunc.h)(0x51C817BA)
-I (G:\Keil\IDE\ARM\Inc\ST\STM32F10x\system_stm32f10x.h)(0x51C8125A)
-F (.\Potentiomter_Functions.c)(0x5693E0B5)()
-F (.\Speaker_Functions.c)(0x5693E173)()
-F (.\Abstract.txt)(0x5668124C)()
